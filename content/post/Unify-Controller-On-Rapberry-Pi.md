@@ -5,6 +5,6 @@ Description: "Running Unify Controller on Raspberry Pi with Docker"
 Tags: [Raspbery Pi,Docker,Unify]
 Categories: [Projects,Tutorials]
 DisableComments: true
-draft: true
+draft: false
 ---
 # How to Run Unify Controller on a Raspberry Pi with Docker
