@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "kalifornia909.info"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "My Tech Journey"
@@ -14,7 +14,7 @@ enableRobotsTXT = true
 #googleAnalytics = ""
 
 [params]
-title = "Josh's Blog"
+title = "Kalifornia909's Blog"
 author = "Josh Gaede"
 description = "Technology Projects and Tips"
 profilePicture = "images/me.jpg"
