@@ -91,7 +91,7 @@ To check on the startup process you will want to run the command
 sudo docker ps
 ```
 You will want to look at the status and wait for it to say healthy
-{{< figure src="images/Posts/001/dockerps.jpg" >}}
+{{< figure src="/images/Posts/001/dockerps.jpg" >}}
 
 Now you can log in to your unify controller on your raspbery pi's ip on port 8443, and start configuring everything. 
 
