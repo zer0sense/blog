@@ -7,8 +7,6 @@ Categories: [Projects,Tutorials]
 DisableComments: true
 draft: false
 ---
-## Running Unify Controller with Docker on a Raspberry Pi
-
 Docker has intrigued me since I first found out about it. The ability to run an application and dependencies without having to use a full operating system for every application. A lot of VM stacks will have a single application on a VM, but also have to install a full operating system __for every VM__. That is a lot of overhead in my opinion.
 
 The mobility of being able to migrate a container from one host to another seems pretty amazing. I have one raspberry pi that I am using, so I haven't experience this first hand. From what I understand, its amazingly efficient and easy.
