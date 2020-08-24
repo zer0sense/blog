@@ -11,7 +11,7 @@ enableRobotsTXT = true
 #disqusShortname = ""
 
 # Google Analytics
-#googleAnalytics = "UA-176080397-1"
+googleAnalytics = "UA-176080397-1"
 
 [params]
 title = "Kalifornia909's Insight into Zero's and Ones"
