@@ -11,14 +11,14 @@ enableRobotsTXT = true
 #disqusShortname = ""
 
 # Google Analytics
-#googleAnalytics = ""
+googleAnalytics = "UA-176080397-1"
 
 [params]
-title = "Kalifornia909's Blog"
+title = "Kalifornia909's Insight into Zero's and Ones"
 author = "Josh Gaede"
-description = "Technology Projects and Tips"
+description = "Sharing my projects and passion for technology"
 profilePicture = "images/me.jpg"
-keywords = ""
+keywords = "Technology,Information Technology,Cyber Security"
 favicon = "favicons/"
 customCss = []
 customJs = []
