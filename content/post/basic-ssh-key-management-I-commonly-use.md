@@ -47,12 +47,54 @@ cat ~/.ssh/pi_ed25519.pub
 
 The file that does __not__ end in .pub is your private key, and its meant to be private to that computer. If you cat the wrong file you will get an output that beings with:
 > -----BEGIN OPENSSH PRIVATE KEY-----
-This tells you right away that it is your private key. Do not give this to anyone.
+This tells you right away that it is your private key. Do __not__ give this to anyone.
 
+### Using Your SSH Key
+You did it! You create your first key pair! Now what? 
+
+The first thing I am going to do is add that key pair identity.
+```
+ssh-add pi_ed25519
+```
+Next I am going to copy this over to my raspberry pi. You can replace raspberry pi with whatever server you are wanting to use this key pair to connect to.
+```
+ssh-copy-id -i ~/.ssh/pi_ed25519 username@ip-address
+```
+This will copy your ssh pubic key over to the server. In the example the username@ip-address is for whatever host you are trying to connect to. For example root@127.0.01 would copy your ssh public key over to login whenever you tried to log in with that user name at that IP address.
 
 ---
 If you would like a more in-depth explanation, and some great tech videos I have posted the videos that inspired this blog post
 
+### Tweaking SSH To Your Liking
+Hopefully by now you are able to login to your host easily and securely. Here are some things that you might want to consider.
+
+One thing you might want to try is to prevent the root user from being able to login using SSH. This could be helpful to prevent some brute force attacks once SSH pops up on a scan. I will be using vim to edit the SSHD config file. Use whatever text editor you are comfortable with.
+```
+sudo vim /etc/ssh/sshd_config
+```
+You want to make sure you are editing the __sshd_config__ because there is a file in the same folder that is named ssh_config. Now to disable the root user from being able to login via ssh.
+
+Find the line in the config file that has
+> PermitRootLogin
+This line might have a # in front of it so it might look like:
+> #PermitRootLogin
+If that is the case you will want to remove the #. You can type yes or no depending on your preference. 
+
+Similar to this
+{{<figure src="/images/Posts/003/sshnoroot.jpg">}}
+
+Another option in this config file is if you want to allow users to login with a password. Once you have your SSH key on the host you will not being using a password anymore. To make changes to this option you will want to find the line that has
+> PasswordAuthentication
+You can say yes or no depending on if you want to allow for password logins.
+Similar to this:
+```
+{{<figure src="/images/Posts/003/sshpassauthno.jpg">}}
+```
+
+
+
+
+---
 #### SSH Keygen Video
 {{<youtube vINn1MIrf7o>}}
 
