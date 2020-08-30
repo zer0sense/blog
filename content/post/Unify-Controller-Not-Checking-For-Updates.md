@@ -5,7 +5,7 @@ Description: ""
 Tags: [Raspberry Pi,Docker,Unifi]
 Categories: [Troubleshooting]
 DisableComments: true
-draft: True
+draft: False
 ---
 {{<figure src="/images/Posts/002/updatefail.jpg">}}
 I have ran into an issue where the update check has failed on my unifi controller. This has been after a container upgrade, or when I have restored from a backup. It didnt send a notification saying that it failed, but I was going through the controller setting and found out it failed. This took some time and tinkering to figure out how to get this up and running. A lot of remedies I found online was to just reinstall your os/distro. This didnt seem viable due to the fact I would either have to reconfigure everything on the fresh install, or restore from backup and roll my 20 sided dice hoping it would work.

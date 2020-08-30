@@ -5,7 +5,7 @@ Description: "Basic SSH Key Management I Commonly Use"
 Tags: [SSH]
 Categories: [Tutorials]
 DisableComments: true
-draft: false
+draft: True
 ---
 I have only scratched the surface when it comes to the power and convenience of SSH. I am not managing a slew of servers that I have SSH connections for, but it has become more and more an integral part of tech routine. Using github and gitlab, logging into my raspberry pi at home, and an easy way to go from my Linux laptop to desktop has made SSH a very valuable tool. 
 
@@ -92,9 +92,9 @@ Another option in this config file is if you want to allow users to login with a
 > PasswordAuthentication
 You can say yes or no depending on if you want to allow for password logins.
 Similar to this:
-```
+
 {{<figure src="/images/Posts/003/sshpassauthno.jpg">}}
-```
+
 
 ### Modifying SSH Config File
 A SSH config file can help if you have multiple SSH keys and identities, or by running a specific command that you want to run. In the video example, Tom has a SSH connection to a server that will reboot the server without input.One reason I have had to use it was gitlab was checking for default ssh key names and would not let me interact with a repository I have. 
@@ -122,6 +122,10 @@ Amongst many others I am sure I am just scratching the surface. The video below 
 
 
 ---
+---
+Please take the time out and check out the videos that inspired this writeup. It is a great tech channel to learn from. I have been subscribed for over a year now and have grown a great deal because of it. 
+
+
 #### SSH Keygen Video
 {{<youtube vINn1MIrf7o>}}
 
