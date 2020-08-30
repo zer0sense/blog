@@ -25,9 +25,11 @@ This option is the math randomness while its being generated.
 > -t ed25519
 The -t is to choose what you are going to use to generate your key.
 > -f ~/.ssh/pi_ed25519
+
 This is where you will save your SSH key and it also gives you the option of choose the filename if you want to change it. You can choose to leave this as the default if you want, but I generate a new key for the different connections I use. Overkill, possibly, but it also gives me options to grow and fail. One thing I learned the hard way is to type out the full path of the ~./ssh/. You have to possibility of throwing ssh keys around everywhere and not knowing where they were generated. Then what happens, you generate it again. Only to have the same result. Yes....yes....I have done this.
 
 > -C "Kalifornia909@pi"
+
 The -C is for comment. I believe its common practice to put an email address, but I keep this kind of random. 
 
 You should receive an output similar to this:
@@ -47,6 +49,7 @@ cat ~/.ssh/pi_ed25519.pub
 
 The file that does __not__ end in .pub is your private key, and its meant to be private to that computer. If you cat the wrong file you will get an output that beings with:
 > -----BEGIN OPENSSH PRIVATE KEY-----
+
 This tells you right away that it is your private key. Do __not__ give this to anyone.
 
 ### Using Your SSH Key
@@ -54,7 +57,7 @@ You did it! You create your first key pair! Now what?
 
 The first thing I am going to do is add that key pair identity.
 ```
-ssh-add pi_ed25519
+ssh-add ~/.ssh/pi_ed25519
 ```
 Next I am going to copy this over to my raspberry pi. You can replace raspberry pi with whatever server you are wanting to use this key pair to connect to.
 ```
@@ -76,8 +79,10 @@ You want to make sure you are editing the __sshd_config__ because there is a fil
 
 Find the line in the config file that has
 > PermitRootLogin
+
 This line might have a # in front of it so it might look like:
 > #PermitRootLogin
+
 If that is the case you will want to remove the #. You can type yes or no depending on your preference. 
 
 Similar to this
@@ -91,10 +96,36 @@ Similar to this:
 {{<figure src="/images/Posts/003/sshpassauthno.jpg">}}
 ```
 
+### Modifying SSH Config File
+A SSH config file can help if you have multiple SSH keys and identities, or by running a specific command that you want to run. In the video example, Tom has a SSH connection to a server that will reboot the server without input.One reason I have had to use it was gitlab was checking for default ssh key names and would not let me interact with a repository I have. 
 
+Lets dive into it:
+```
+vim ~/.ssh/config
+```
+There are many options that you can do with this but here is mine that allowed me to connect to github.
+{{<figure src="/images/Posts/003/sshconfig.jpg">}}
+
+Lets break down what we see here. There is a #Gitlab.com entry. This is commented out with a #; meaning that when this file is processed the computer will skip that line. 
+
+The Host is gitlab.com. Pretty self explanatory. However you can replace this with an IP Address of what you are trying to connect to.
+
+The Preferredauthentications is defining that I want to use my public key to connect to this host. My IdentityFile is where my SSH key for this connection is stored.
+
+However what you don't see but can add is:
+>Port
+>User
+>RemoteCommand
+>Request TTY
+
+Amongst many others I am sure I am just scratching the surface. The video below goes through a more in depth explanation of this config file. 
 
 
 ---
 #### SSH Keygen Video
 {{<youtube vINn1MIrf7o>}}
+
+#### SSH Config Video
+{{<youtube FhnsVH8t96Q>}}
+
 
