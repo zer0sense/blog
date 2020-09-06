@@ -20,7 +20,8 @@ ssh-keygen -a 100 -t ed25519 -f ~/.ssh/pi_ed25519 -C "Kalifornia909@pi"
 ```
 
 We can break this command down a little to explain some of the options
-> The -a 100
+
+> -a 100
 
 This option is the math randomness while it's being generated. 
 
@@ -52,6 +53,7 @@ cat ~/.ssh/pi_ed25519.pub
 ```
 
 The file that does __not__ end in .pub is your private key, and its meant to be private to that computer. If you cat the wrong file you will get an output that beings with:
+
 > -----BEGIN OPENSSH PRIVATE KEY-----
 
 This tells you right away that it is your private key. Do __not__ give this to anyone.
@@ -82,9 +84,11 @@ sudo vim /etc/ssh/sshd_config
 You want to make sure you are editing the __sshd_config__ because there is a file in the same folder that is named ssh_config. Now to disable the root user from being able to login via ssh.
 
 Find the line in the config file that has
+
 > PermitRootLogin
 
 This line might have a # in front of it so it might look like:
+
 > #PermitRootLogin
 
 If that is the case you will want to remove the #. You can type yes or no depending on your preference. 
@@ -117,6 +121,7 @@ The Host is gitlab.com. Pretty self explanatory. However you can replace this wi
 The Preferredauthentications is defining that I want to use my public key to connect to this host. My IdentityFile is where my SSH key for this connection is stored.
 
 However what you don't see but can add is:
+
 >Port
 >User
 >RemoteCommand
