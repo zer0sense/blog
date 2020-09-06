@@ -97,7 +97,9 @@ Similar to this
 {{<figure src="/images/Posts/003/sshnoroot.jpg">}}
 
 Another option in this config file is if you want to allow users to login with a password. Once you have your SSH key on the host you will not being using a password anymore. To make changes to this option you will want to find the line that has
+
 > PasswordAuthentication
+
 You can say yes or no depending on if you want to allow for password logins.
 Similar to this:
 
@@ -123,8 +125,11 @@ The Preferredauthentications is defining that I want to use my public key to con
 However what you don't see but can add is:
 
 >Port
+
 >User
+
 >RemoteCommand
+
 >Request TTY
 
 Amongst many others I am sure I am just scratching the surface. The video below goes through a more in depth explanation of this config file. 
