@@ -13,17 +13,21 @@ During my daily YouTube content intake, I came across a video from one of the ch
 
 ### Generating SSH Keys
 
-I will be using ED25519 to generate my keys in this blog post. Tom, the host of the YouTube video, goes into detail and leaves reference links for using this to generate the key, and it easier to follow along when you use the same methodology. 
+I will be using ED25519 to generate my keys in this blog post. Tom, the host of the YouTube video, goes into detail and leaves reference links for using this to generate the key, and it is easier to follow along when you use the same methodology. 
 Lets start the key generation:
 ```
 ssh-keygen -a 100 -t ed25519 -f ~/.ssh/pi_ed25519 -C "Kalifornia909@pi"
 ```
 
 We can break this command down a little to explain some of the options
-> -a 100
-This option is the math randomness while its being generated. 
+> The -a 100
+
+This option is the math randomness while it's being generated. 
+
 > -t ed25519
+
 The -t is to choose what you are going to use to generate your key.
+
 > -f ~/.ssh/pi_ed25519
 
 This is where you will save your SSH key and it also gives you the option of choose the filename if you want to change it. You can choose to leave this as the default if you want, but I generate a new key for the different connections I use. Overkill, possibly, but it also gives me options to grow and fail. One thing I learned the hard way is to type out the full path of the ~./ssh/. You have to possibility of throwing ssh keys around everywhere and not knowing where they were generated. Then what happens, you generate it again. Only to have the same result. Yes....yes....I have done this.
