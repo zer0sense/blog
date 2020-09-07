@@ -20,11 +20,14 @@ description = "Sharing my projects and passion for technology"
 profilePicture = "images/me.jpg"
 keywords = "Technology,Information Technology,Cyber Security"
 favicon = "favicons/"
-customCss = []
+customCss = ["css/syntax.css"]
 customJs = []
 mainSections = ["post"]
 images = ["images/site-feature-image.png"]
 displayMode = "dark"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
 
 ## Math settings
 [params.math]
