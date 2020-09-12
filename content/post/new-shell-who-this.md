@@ -5,7 +5,7 @@ Description: "Switching to the ZSH shell from BASH"
 Tags: [Linux,ZSH,Bash,Shells]
 Categories: [Linux,Tutorials]
 DisableComments: false
-draft: True
+draft: true
 ---
 
 One of the release notes that I noticed in the new Kali Linux version is that they are including ZSH as a shell. I can barely tap into the power of bash as a shell, but I wanted to see what some of the features of this ZSH shell was. I was extremely impressed on the plugin features and themes you can apply to the ZSH shell. With that being said, I figured that I should at least give it an install and configure to test it out. That is what today's blog post is about. How I installed and configured my ZSH shell, and some of the things that I enjoy while using it.
@@ -29,7 +29,7 @@ I am not going to go through the user prompts of setting up the initial .zshrc f
 
 ### Install Oh-My-ZSH
 
-Oh-My-ZSH[https://github.com/ohmyzsh/ohmyzsh] gives the customizability that I really liked while researching ZSH and how to make it mine.  
+[Oh-My-ZSH](https://github.com/ohmyzsh/ohmyzsh) gives the customizability that I really liked while researching ZSH and how to make it mine.  
 
 We are going to use curl to get the install script and install Oh-My-ZSH
 
@@ -41,13 +41,13 @@ One thing I highly encourage is to cd into the .oh-my-zsh/plugins directory and 
 
 ### Installing Our Theme
 
-Now lets get the Powerlevel 10k theme[https://github.com/romkatv/powerlevel10k#oh-my-zsh] installed
+Now lets get the Powerlevel 10k [theme](https://github.com/romkatv/powerlevel10k#oh-my-zsh) installed
 
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
-We will install the font dependency to go with this theme. To follow with your distribution go to this page[https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k], and scroll down until it talks about Meslo Nerd Font. There are install instructions on there. I also installed the awesome font terminal pack from here[https://github.com/gabrielelana/awesome-terminal-fonts]
+We will install the font dependency to go with this theme. To follow with your distribution go to this [page](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k), and scroll down until it talks about Meslo Nerd Font. There are install instructions on there. I also installed the awesome font terminal pack from [here](https://github.com/gabrielelana/awesome-terminal-fonts)
 
 Then get that theme to your .zshrc file. You will want to open the .zshrc file in a text editor and make sure the line is like the line below.
 
@@ -72,11 +72,11 @@ p10k configure
 
 ###  Plugins
 
-I wanted to try some of the plugins. A lot of them include really great aliases to interact with things such as git,aws,docker, and many many more. If you want to add them you simply add it cto the line that has 
+I wanted to try some of the plugins. A lot of them include really great aliases to interact with things such as git,aws,docker, and many many more. If you want to add them you simply add it to the line that has 
 
 > Plugin=(git)
 
-You can add all the plugins you want, but please read the README.md to check for dependencies and usage. One of my favorites so far is the syntax highlighting[https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md] plugin. This adds color to any command and command syntax that you use directly in the terminal. 
+You can add all the plugins you want, but please read the README.md to check for dependencies and usage. Add a space in between the plugin names to add them. One of my favorites so far is the syntax [highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) plugin. This adds color to any command and command syntax that you use directly in the terminal. 
 
 ### Alias File
 
