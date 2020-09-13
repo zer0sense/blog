@@ -5,7 +5,7 @@ Description: "Switching to the ZSH shell from BASH"
 Tags: [Linux,ZSH,Bash,Shells]
 Categories: [Linux,Tutorials]
 DisableComments: false
-draft: true
+draft: false
 ---
 
 One of the release notes that I noticed in the new Kali Linux version is that they are including ZSH as a shell. I can barely tap into the power of bash as a shell, but I wanted to see what some of the features of this ZSH shell was. I was extremely impressed on the plugin features and themes you can apply to the ZSH shell. With that being said, I figured that I should at least give it an install and configure to test it out. That is what today's blog post is about. How I installed and configured my ZSH shell, and some of the things that I enjoy while using it.
