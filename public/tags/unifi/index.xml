@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unifi on My Tech Journey</title>
+    <link>https://kalifornia909.info/tags/unifi/</link>
+    <description>Recent content in Unifi on My Tech Journey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 23 Aug 2020 08:22:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://kalifornia909.info/tags/unifi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unify Controller Not Checking for Updates</title>
+      <link>https://kalifornia909.info/post/unify-controller-not-checking-for-updates/</link>
+      <pubDate>Sun, 23 Aug 2020 08:22:22 +0900</pubDate>
+      
+      <guid>https://kalifornia909.info/post/unify-controller-not-checking-for-updates/</guid>
+      <description>I have ran into an issue where the update check has failed on my unifi controller.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -37,7 +37,7 @@ We are going to use curl to get the install script and install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-One thing I highly encourage is to cd into the .oh-my-zsh/plugins directory and take a look at all the plugins this comes with. Each plugin will come witha README.md file that you can look at and see how the plugin is used.
+One thing I highly encourage is to cd into the .oh-my-zsh/plugins directory and take a look at all the plugins this comes with. Each plugin will come with a README.md file that you can look at and see how the plugin is used.
 
 ### Installing Our Theme
 
