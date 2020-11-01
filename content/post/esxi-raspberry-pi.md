@@ -5,7 +5,7 @@ Description: "Running ESXI on Raspberry Pi"
 Tags: [ESXI,Virtualization,Rapsberry Pi]
 Categories: [Projects,Tutorials]
 DisableComments: false
-draft: True
+draft: False
 ---
 
 I would of never thought that I could set up a lab for ESXI on something as simple as the Raspberry Pi, but I am glad that I was wrong. I currently have a 4gb Raspberry Pi 4 and an 8gb version as well, and my goal is to set up an EXSI cluster using those two devices. That alone will be a great bit of experience to have under my belt. 
@@ -119,11 +119,11 @@ You can select the image once it is finished uploading.
 
 Review and finish through the setup. Now you will want to select the image and power it on.
 
-{{<figure src="/images/Posts/005/vmwarecreatevm5.jpg">}}
+{{<figure src="/images/Posts/005/vmwarepoweron.jpg">}}
 
 A small window will show underneath.  You can click that window to interact with the server as it is setting up.
 
-{{<figure src="/images/Posts/005/vmwarecreatevm5.jpg">}}
+{{<figure src="/images/Posts/005/vmwarepoweron1.jpg">}}
 
 Enjoy! This will hopefully be part of a series to setup multiple VM's in ESXI and play with Kubernetes and docker in a my lab setup.
 
