@@ -89,6 +89,46 @@ It might take a little bit to completely shutdown and reboot, but once it does h
 
 You will see your IP address in the yellow portion of the screen once everything is loaded. You can type that address in to access the web interface of your ESXI server.
 
+## Create Your Virtual Machine
 
+Once you have logged in you will see the Virtual Machines on the left.
 
+{{<figure src="/images/Posts/005/vmwarevm.jpg">}}
 
+When you download images you will want to make sure they are Arm compatible. I am going to start with [Ubuntu Server](https://ubuntu.com/download/server/arm).
+
+Let's create a VM. 
+
+{{<figure src="/images/Posts/005/vmwarecreatevm.jpg">}}
+
+{{<figure src="/images/Posts/005/vmwarecreatevm1.jpg">}}
+
+{{<figure src="/images/Posts/005/vmwarecreatevm2.jpg">}}
+
+Leave the datastore as it is, unless you have another storage setup. The Customize settings is all your choice. However you want to divide up your CPU,Ram, and HDD space. 
+
+{{<figure src="/images/Posts/005/vmwarecreatevm3.jpg">}}
+
+One change you will want to make is the CD/DVD Drive 1, you will change it from __Host File__ to Datastore ISO File. Choose the option to Upload.
+
+{{<figure src="/images/Posts/005/vmwarecreatevm4.jpg">}}
+
+{{<figure src="/images/Posts/005/vmwarecreatevm5.jpg">}}
+
+You can select the image once it is finished uploading.
+
+Review and finish through the setup. Now you will want to select the image and power it on.
+
+{{<figure src="/images/Posts/005/vmwarecreatevm5.jpg">}}
+
+A small window will show underneath.  You can click that window to interact with the server as it is setting up.
+
+{{<figure src="/images/Posts/005/vmwarecreatevm5.jpg">}}
+
+Enjoy! This will hopefully be part of a series to setup multiple VM's in ESXI and play with Kubernetes and docker in a my lab setup.
+
+---
+
+The tutorial that started this project that I have enjoyed
+
+{{<youtube 6aLyZisehCU>}}
