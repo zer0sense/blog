@@ -72,7 +72,19 @@ url = "https://twitter.com/kalifornia909"
   url = "/post/"
 
   [[menu.main]]
-  name = "About"
+  name = "Tags"
   weight = 300
+  identifier = "tags"
+  url = "/tags/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 500
   identifier = "about"
   url = "/about/"
+
+  [[menu.main]]
+  name = "Categories"
+  weight = 400
+  identifier = "categories"
+  url = "/categories/"
