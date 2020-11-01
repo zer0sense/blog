@@ -62,5 +62,33 @@ Save your changes to the file, eject your microSD card, and you can remove it fr
 
 We will need an [ESXI Image](https://flings.vmware.com/esxi-arm-edition) to download for the installation. If you do not have a VMWare account you can go ahead and sign up. The account is free.
 
-Once you have downloaded the image we will jump back into Etcher, and when we select the file we will use a separate usbdrive to flash the image on to.
+Once you have downloaded the image we will jump back into Etcher, and when we select the file we will use a separate usbdrive to flash the image on to. Now that the flash drive has the EXSI image on it eject it from your computer, and plug it into your Raspberry Pi. Your Raspberry Pi should have both the microSD card we already setup and the usbdrive we just flashed the ESXI image on. 
+
+Power up the Pi, and you will have to hit the escape key on your keyboard as soon as you see an image pop up on your Pi, so that we can enter the setup.
+
+### BIOS Changes to Unlock Ram Limit and Boot to USB Drive
+
+You will see a small gray box once you hit the escape key and you are in the UEFI for the Raspberry Pi. The ram that you see on your Pi is incorrect, and we are going to fix that first. Using your arrow keys to navigate you want to use the following path __Device Management > Rapberry Pi Configuration > Advance Configuration__ and hit enter on the line that says __Limit RAM to 3 GB__. Choose disable to get the full ram configuration on your Raspberry Pi. To save those changes hit __F10__ on your keyboard and press __Y__ on your keyboard to save it.
+
+Now hit the __Escape Key__ on your keyboard until you get back to the original screen that is the gray box with your Raspberry Pi information. Use the arrow keys on your keyboard to highlight __Continue__ and hit enter. 
+
+Your Raspberry Pi will reboot, and once again you will be hitting the __Escape Key__ while it is booting up until you see the gray box with your Raspberry Pi information. You will go to __Boot Manager__, and you will use the arrow keys to highlight the name of your USB Drive. 
+
+As soon as the boot process starts you want to hit __shift and o__. If you are successful you will see _runweasel cdromboot00_ on your screen. You will want to add the following command (which is case sensative)
+
+```
+autoPartitionOSDataSize=8192
+```
+This will ensure that the ESXI image will not take over your whole microSD card.
+
+### ESXI Setup
+
+Now you will see a gray and yellow screen with a progress bar at the bottom. This could take a while. Once it has finished, you will see a Welcome message. Hit enter to continue, and hit __F11__ to accept the EULA. The installer will scan your available drives. You will see the installer usb for now, but we want to get another USB Drive for the actual installation. Once inserted, you will hit __F5__ to refresh and choose the blank USB drive. Choose your layout and enter your root password. You will get a prompt to confirm the install and hit __F11__ to install. The install will complete and ask you to remove the installation USB drive from the Raspberry Pi, so remove it and hit enter to reboot.
+
+It might take a little bit to completely shutdown and reboot, but once it does hit the __Escape Key__ on your keyboard again to enter the UEFI for the Raspberry Pi. Using your arrow keys go down to _Boot Maintenance Manager > Boot Options > Change Boot Order_. Hit the __Enter Key__ and a Box will pop up; select the USB drive name and use the __+__ key to move it to the top. Hit enter and then __F10__ to save, and __Y__ to commit the change. Now escape back to the main menu and select continue. ESXI should load.
+
+You will see your IP address in the yellow portion of the screen once everything is loaded. You can type that address in to access the web interface of your ESXI server.
+
+
+
 
