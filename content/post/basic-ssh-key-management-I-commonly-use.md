@@ -141,7 +141,7 @@ Please take the time out and check out the videos that inspired this writeup. It
 
 
 #### SSH Keygen Video
-{{< youtube vINn1MIrf7o >}}
+{{< youtube id="vINn1MIrf7o" >}}
 
 #### SSH Config Video
 {{< youtube FhnsVH8t96Q >}}
