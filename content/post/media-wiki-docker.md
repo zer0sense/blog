@@ -123,7 +123,7 @@ services:
     image: mariadb
     restart: always
     volumes:
-        - /media/usbdrive/NAS/Backup/Kalibuntu/mediawiki:/var/lib/mysql
+        - /PATHONYOURPC:/var/lib/mysql
     environment:
       # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
       MYSQL_DATABASE: my_wiki
