@@ -4,7 +4,7 @@ date: 2021-01-19T20:21:55+09:00
 Description: "Running MediaWiki with Docker"
 Tags: [Docker,Raspberry Pi,YAML]
 Categories: [Tutorial]
-DisableComments: false
+Comments: false
 draft: false
 ---
 

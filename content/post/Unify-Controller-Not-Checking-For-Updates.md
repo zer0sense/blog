@@ -4,7 +4,7 @@ date: 2020-08-23T08:22:22+09:00
 Description: ""
 Tags: [Raspberry Pi,Docker,Unifi]
 Categories: [Troubleshooting]
-DisableComments: true
+Comments: false
 draft: False
 ---
 {{<figure src="/images/Posts/002/updatefail.jpg">}}

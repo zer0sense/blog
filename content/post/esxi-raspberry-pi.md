@@ -4,7 +4,7 @@ date: 2020-11-01T13:01:50+09:00
 Description: "Running ESXI on Raspberry Pi"
 Tags: [ESXI,Virtualization,Raspberry Pi]
 Categories: [Projects,Tutorials]
-DisableComments: false
+Comments: false
 draft: False
 ---
 

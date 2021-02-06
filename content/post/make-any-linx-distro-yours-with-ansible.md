@@ -4,7 +4,7 @@ date: 2021-02-06T11:39:29+09:00
 Description: "Using Ansible Pull to Install Programs and configurations"
 Tags: [Ansible,YAML]
 Categories: [Tutorial,Project,Linux]
-DisableComments: false
+Comments: false
 draft: false
 ---
 
@@ -97,4 +97,4 @@ I hope you find this useful, and that if you do please fork it in github. Make i
 
 The Video below is what sparked this project. Please take a look, and see if this can inspire you to play with Ansible and automation too.
 
-{{< youtube id="gIDywsGBqf4&t" >}}
+{{< youtube gIDywsGBqf4 >}}
