@@ -1,7 +1,0 @@
-[submodule "themes/anatole"]
-	path = themes/anatole
-	url = https://github.com/lxndrblz/anatole.git
-
-[submodule "hugo-future-imperfect-slim"]
-	path = hugo-future-imperfect-slim
-	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
