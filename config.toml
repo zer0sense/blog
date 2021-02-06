@@ -62,25 +62,25 @@ url = "https://www.instagram.com/josh_gaede/"
 [menu]
 
   [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
   name = "Posts"
   weight = 200
   identifier = "posts"
   url = "/post/"
 
   [[menu.main]]
-  name = "Tags"
-  weight = 300
-  identifier = "tags"
-  url = "/tags/"
-
-  [[menu.main]]
   name = "About"
-  weight = 500
+  weight = 300
   identifier = "about"
   url = "/about/"
 
   [[menu.main]]
-  name = "Categories"
+  name = "Contact"
   weight = 400
-  identifier = "categories"
-  url = "/categories/"
+  identifier = "contact"
+  url = "/contact/"
