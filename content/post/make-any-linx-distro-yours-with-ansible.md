@@ -4,7 +4,7 @@ date: 2021-02-06T11:39:29+09:00
 Description: "Using Ansible Pull to Install Programs and configurations"
 Tags: [Ansible,YAML]
 Categories: [Tutorial,Project,Linux]
-DisableComments: true
+DisableComments: false
 draft: false
 ---
 
