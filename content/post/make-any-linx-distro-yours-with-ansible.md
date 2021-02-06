@@ -5,7 +5,7 @@ Description: "Using Ansible Pull to Install Programs and configurations"
 Tags: [Ansible,YAML]
 Categories: [Tutorial,Project,Linux]
 DisableComments: true
-draft: true
+draft: false
 ---
 
 During my consumption of tech YouTube content I came across a video talking about Ansible Pull. I am familiar with Ansible, so I queue it up. As soon as I finished the video this project came to mind.
