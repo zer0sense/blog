@@ -61,7 +61,7 @@ url = "https://www.instagram.com/josh_gaede/"
 
 [menu]
 
-  [[menu.main]]
+ [[menu.main]]
   name = "Home"
   identifier = "home"
   weight = 100
