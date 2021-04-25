@@ -5,7 +5,7 @@ Description: "Use Pandoc to Convert Document Formats"
 Tags: [Markdown,Wiki,PDF]
 Categories: [Tutorials,Linux]
 Comments: false
-draft: true
+draft: false
 ---
 I have become pretty comfortable using markdown for multiple tasks. This blog is written in markdown, and most of my notes I've taken while studying have also used markdown. Why would I take notes in a way that I also have to be comfortable with the syntax? For me, it was about having a standard output and formatting. I found it quicker for indentations that I like, and using the headers helps as well. 
 
