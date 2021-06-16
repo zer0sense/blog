@@ -4,7 +4,7 @@ date: 2021-05-22T10:35:49+09:00
 Description: "How to Setup NextCloud on Your Raspberry Pi"
 tags: ["Docker,Raspberry Pi,Linux,NextCloud"]
 categories: [Tutorials,Linux]
-comments: true
+comments: false
 draft: false
 ---
 Nextcloud hit my radar of interesting technology to try quite a long time ago. This collaboration tool is free and open source, and gives a decent point to store your contacts and photos. There are an incredible amount of apps that really expand the capability of Nextcould. Mail,calendar,a chat client just to name a couple.

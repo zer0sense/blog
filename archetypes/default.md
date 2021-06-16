@@ -4,7 +4,7 @@ date: {{ .Date }}
 description: ""
 tags: [""]
 categories: [""]
-comments: true
+comments: false
 draft: true
 ---
 
