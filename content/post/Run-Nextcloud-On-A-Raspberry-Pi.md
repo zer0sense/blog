@@ -2,7 +2,7 @@
 title: "Run Nextcloud on a Raspberry Pi"
 date: 2021-05-22T10:35:49+09:00
 Description: "How to Setup NextCloud on Your Raspberry Pi"
-tags: ["Docker,Raspberry Pi,Linux,NextCloud"]
+tags: [Docker,Raspberry Pi,Linux,NextCloud]
 categories: [Tutorials,Linux]
 comments: false
 draft: false
