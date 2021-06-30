@@ -3,7 +3,7 @@ title: "THM Pickle Rick"
 date: 2021-06-30T19:22:56+09:00
 description: "Try Hack Me - Pickle Rick"
 tags: [THM,CTF]
-categories: [Ethical Hacking,CTF,TryHackMe,Linux]
+categories: [Ethical Hacking,CTF,TryHackMe,Linux,Pentesting]
 comments: false
 draft: false
 ---
