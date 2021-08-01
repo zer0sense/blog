@@ -2,7 +2,7 @@
 title: "Try Hack Me RootMe"
 date: 2021-08-01T11:06:58+09:00
 description: "TryHackMe - RootMe"
-tags: [THM,CTF,]
+tags: [THM,CTF,PHP]
 categories: [Ethical Hacking,CTF,TryHackMe,Linux,Pentesting]
 comments: false
 draft: false
