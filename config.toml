@@ -122,7 +122,7 @@ disableLanguages        = []
 #  [[menu.main]]
 #    name              = "Contact"
 #    identifier        = "contact"
-#   url               = "/contact/"
+#    url               = "/contact/"
 #    pre               = "<i class='far fa-envelope'></i>"
 #    weight            = 6
 
