@@ -1398,6 +1398,14 @@ figcaption {
     font-family: "Font Awesome 5 Brands";
     content: ""; }
 
+.vk {
+  background-color: #5181b8; }
+  .vk:hover {
+    background-color: #3e6898; }
+  .vk::before {
+    font-family: "Font Awesome 5 Brands";
+    content: ""; }
+
 .email {
   background-color: #454545;
   font-weight: 900; }
