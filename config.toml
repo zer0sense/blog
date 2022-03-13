@@ -55,7 +55,7 @@ disableLanguages        = []
     alwaysOnHomepage      = false
 
     [params.intro.pic]
-      src                 = "images/me.jpg"
+      src                 = "images/logo.jpg"
       shape               = "circle"
       width               = ""
       alt                 = "Kalifornia909.Info"
