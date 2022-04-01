@@ -3,7 +3,7 @@ title: "Metasploit With Docker"
 date: 2022-03-26T23:18:41+09:00
 description: "Run Metasploit with Docker"
 tags: [Docker,CTF,Linux,Metasploit]
-categories: [Pentesting,Tutorial,Ethical Hacking]
+categories: [Pentesting,Tutorials,Ethical Hacking]
 comments: false
 draft: false
 ---
