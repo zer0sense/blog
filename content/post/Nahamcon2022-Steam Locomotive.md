@@ -5,7 +5,7 @@ description: "Nahamcon 2022 Steam Locomotive"
 tags: [Nahamcon2022,CTF,SSH]
 categories: [CTF,Ethical Hacking,Pentesting]
 comments: false
-draft: True
+draft: false
 ---
 
 This box is very short and sweet. It made me smile figuring it out. When you SSH into the box you have absolutely no control to do anything, but it does bring this great art running through your terminal.
