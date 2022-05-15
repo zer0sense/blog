@@ -2,7 +2,7 @@
 title: "Cyber Apocalypse 2022 - Kryptos Support"
 date: 2022-05-15T22:15:58+09:00
 description: "A Web Challenge from HackTheBox's Cyber Apocalypse 2022"
-tags: [XSS,IDOR,WEB,BURPSUITE,CTF,CyberApocalypse 2022]
+tags: [XSS,IDOR,WEB,Burpsuite,CTF,CyberApocalypse 2022]
 categories: [CTF,Ethical Hacking,Pentesting]
 comments: false
 draft: True
