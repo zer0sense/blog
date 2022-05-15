@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab #Challenge-1</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Core libraries bootstrap & jquery -->
+    <script src="./js/bootstrap5.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JS code -->
+    <script src="./js/script.js"></script>
+
+  </head>
+
+    <header>
+<div class="container">
+  <ul class="nav">
+  	<li class="nav-item">
+    		<a class="nav-link" href="./index.php">Home</a>
+	</li>
+        <li class="nav-item">
+                <a class="nav-link">/</a>
+        </li>
+ 	<li class="nav-item">
+	<a class="nav-link active" >Lab #Challenge-1</a>
+        </li>
+  </ul>
+</div>
+    </header>
+<body>
+  <div class="container" style="padding-top: 5%;">
+      <h1 class="display-4">File Inclusion Lab</h1>
+      <p class="lead">Lab #Challenge-1: Include a file in the input form below
+<hr class="my-4">
+<div class="alert alert-warning" role="alert">
+  The input form is broken! You need to send `POST` request with `file` parameter!
+  </div>
+  <form action= "#" method="GET">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">File Name</span>
+            </div>
+            <input name='file' type="text" class="form-control" placeholder="For example: welcome.php" aria-label="For example: welcome.php" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-success" type="submit" >Include</button>
+            </div>
+          </div>
+        </form>
+<div class="alert alert-danger" role="alert">Flag 2 or Flag 3 is not allowed!</div>
