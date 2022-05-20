@@ -5,7 +5,7 @@ description: "A Web Challenge from HackTheBox's Cyber Apocalypse 2022"
 tags: [XSS,IDOR,WEB,Burpsuite,CTF,CyberApocalypse 2022]
 categories: [CTF,Ethical Hacking,Pentesting]
 comments: false
-draft: True
+draft: false
 ---
 I'll have to admit. This being the first challenge in the web category for the Cyber Apocalypse CTF from HackTheBox definitely set the tone of what to expect. This challenge was an XSS and IDOR combination. Do your directory enumeration in the background. Let's see how it broke down.
 
