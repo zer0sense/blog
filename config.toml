@@ -1,6 +1,6 @@
 baseURL = "https://kalifornia909.info"
 title = "Kalifornia909's Tech Wonderland"
-themesDir = "/home/kalifornia909/git/blog/themes"
+themesDir = "themes/"
 theme = "hugo-theme-m10c"
 paginate = 8
 
