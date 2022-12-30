@@ -1,2 +1,2 @@
 [submodule "themes/hugo-future-imperfect-slim"]
-	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
+	url = git@github.com:pacollins/hugo-future-imperfect-slim.git
