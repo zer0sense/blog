@@ -1,7 +1,7 @@
-baseURL = "https://example.com"
-title = "Your title"
+baseURL = "https://kalifornia909.info"
+title = "Kalifornia909's Tech Wonderland"
 themesDir = "/home/kalifornia909/git/blog/themes"
-theme = "hugo-theme-m10c"
+theme = "m10c"
 paginate = 8
 
 [menu]
