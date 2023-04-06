@@ -1,8 +1,51 @@
 baseURL = "https://kalifornia909.info"
-title = "Kalifornia909's Tech Wonderland"
-themesDir = "themes/"
-theme = "hugo-theme-m10c"
-paginate = 8
+languageCode = "en"
+DefaultContentLanguage = "en"
+title = "Kalifornia's Tech Wonderland"
+
+# theme as hugo module
+#theme = "github.com/lxndrblz/anatole"
+# theme as git submodule
+theme = "anatole"
+
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = ""
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+# Syntax highlighting
+pygmentsUseClasses = true   
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+# Localized dates requires Hugo version 0.87.0
+localizedDates = false
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = 'keywords'
+  weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 80
 
 [menu]
   [[menu.main]]
@@ -14,7 +57,7 @@ paginate = 8
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 4
+    weight = 3
   [[menu.main]]
     identifier = "about"
     name = "About"
@@ -27,39 +70,75 @@ paginate = 8
     weight = 4
 
 [params]
+  title = "Kalifornia's Tech Wonderland"
   author = "Kalifornia909"
-  description = "Technology Thrill Seeker and Cyber Security Nerd"
-  avatar = "images/logo.jpg"
-  menu_item_separator = " - "
-  [[params.social]]
-    icon = "github"
+  #copyright = "2020-{{ YEAR }}"
+  description = "Kalifornia909's Nerd Haven"
+  profilePicture = "images/logo.jpg"
+  keywords = ""
+  favicon = "favicons/"
+  # example ["css/custom.css"]
+  customCss = []
+  # example ["js/custom.js"]
+  customJs = [] 
+  mainSections = ["post"]
+  images = ["images/site-feature-image.png"]
+  doNotLoadAnimations = false
+  # Form Spree Contact Form
+  #contactFormAction = "https://formspree.io/f/your-form-hash-here"
+  #contactFormReCaptcha = "your-site-key-here"
+  # Google Fonts
+  #googleFonts = ["Indie+Flower", "Roboto:ital,wght@0,100;0,400;0,700;1,400"]
+  # Google Site Verify
+  #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  singleDateFormat = "2/1/2006"
+  indexDateFormat = "2/1/2006"
+  listDateFormat = "2/1/2006"
+  # Commento Comments
+  # CommentoURL = "https://commento.example.com/js/commento.js"
+  # Read More links for truncated summaries
+  # readMore = true
+  # postSectionName = "blog"
+  # relatedPosts = true
+  # numberOfRelatedPosts = 3
+
+
+  reversepagetitle = true # When set to 'true', the Window Title will be reversed to 'Title | Author' instead of the default 'Author | Title'
+
+  # hidesidebar = true
+
+  [simpleAnalytics]
+  # enable = true
+  # customurl = "https://analytics.example.com"
+
+  [plausibleAnalytics]
+  # domain = "example.com"
+  # serverURL = "https://analytics.example.com"
+
+  [umami]
+  # serverURL = "example.com"
+  # id = "94db1cb1-74f4-4a40-ad6c-962362670409"
+  # trackerScriptName = "mycustomscriptname.js"
+
+  ## Math settings
+  [math]
+  enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+  use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+  ## Social links
+  # use 'fab' when brand icons, use 'fas' when standard solid icons.
+  [[params.socialIcons]]
+    icon = "fab fa-linkedin"
+    title = "Linkedin"
+    url = "https://www.linkedin.com/in/joshua-gaede/"
+  [[params.socialIcons]]
+    icon = "fab fa-github"
     name = "Github"
     url = "https://github.com/zer0sense"
-  [[params.social]]
-    icon = "twitter"
+  [[params.socialIcons]]
+    icon = "fab fa-twitter"
     name = "Twitter"
     url = "https://twitter.com/kalifornia909"
 
-# Default theme
-#[params.style]
-#  darkestColor = "#242930"
-#  darkColor = "#353b43"
-#  lightColor = "#afbac4"
-#  lightestColor = "#ffffff"
-#  primaryColor = "#57cc8a"
-
-  # Green theme
-  #[params.style]
-  #  darkestColor = "#315659"
-  #  darkColor = "#253031"
-  #  lightColor = "#96a879"
-  #  lightestColor = "#fff"
-  #  primaryColor = "#dad865"
-
-   #Red theme
-#[params.style]
-#  darkestColor = "#d35050"
-#  darkColor = "#212121"
-#  lightColor = "#d6d6d6"
-#  lightestColor = "#d3d3d3"
-  primaryColor = "#ffffff"
+  [mermaid]
+  # enable = true
