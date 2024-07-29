@@ -5,7 +5,7 @@ description: "Using NFS for Docker Containers"
 tags: [Docker,NFS,Linux]
 categories: [Tutorials, Projects,Linux]
 comments: false
-draft: true
+draft: false
 ---
 
 Containerization is such an amazing tool, and will be a part of enterprise infrastructure going forward. This technology has peaked my interest and curiosity for a few years now. One thing that I was curious about, was persistence in these micro services. How would I create persistence if I was to deploy a service with a database in an enterprise. I would probably have access to some kind of storage server, and would have access to network shares. That is when I settled looking into deploying a NFS server and using that for my docker persistence. 
