@@ -8,8 +8,6 @@ comments: false
 draft: false
 ---
 
-{<figure src="https://www.grahamsquires.com/wp-content/uploads/2020/10/2nd-Brain-600x450.png">}
-
 Being a life long learner is such a catchy tag line, but what does that entail. If you are in the world of technology, it means you have heard of more emerging technologies and tools that you can't possibly remember them all. If you are not interacting with these tools and technology on a very frequent basis it starts moving into the long term storage portion of your brain.
 
 This requires a storage strategy for your own brain, at least it did for me. I remember the information overload when I was chasing the cyber security dream. The strategy is what I discovered to be something commonly known as building a second brain. The research and advice people give for building a second brain can be fantastic. Not every strategy works for everyone, but you do have options. This article is to share my strategy and how I build my second brain.
