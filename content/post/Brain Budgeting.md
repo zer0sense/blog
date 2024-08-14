@@ -8,7 +8,7 @@ comments: false
 draft: false
 ---
 
-{<figure src="location of imagehttps://www.grahamsquires.com/wp-content/uploads/2020/10/2nd-Brain-600x450.png">}
+{<figure src="https://www.grahamsquires.com/wp-content/uploads/2020/10/2nd-Brain-600x450.png">}
 
 Being a life long learner is such a catchy tag line, but what does that entail. If you are in the world of technology, it means you have heard of more emerging technologies and tools that you can't possibly remember them all. If you are not interacting with these tools and technology on a very frequent basis it starts moving into the long term storage portion of your brain.
 
