@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Apr 2021 15:08:17 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Pandoc Saved Me Hours</title>
+      <link>http://localhost:1313/post/how-pandoc-saved-me-hours/</link>
+      <pubDate>Sun, 25 Apr 2021 15:08:17 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/how-pandoc-saved-me-hours/</guid>
+      
+        <description>Use Pandoc to Convert Document Formats</description>
+      
+    </item>
+    
+  </channel>
+</rss>

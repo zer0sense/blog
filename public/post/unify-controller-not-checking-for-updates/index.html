@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        Unify Controller Not Checking for Updates |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content=""
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/unify-controller-not-checking-for-updates/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="Unify Controller Not Checking for Updates"/>
+<meta name="twitter:description" content="I have ran into an issue where the update check has failed on my unifi controller."/>
+
+
+
+  
+  <meta property="og:title" content="Unify Controller Not Checking for Updates" />
+<meta property="og:description" content="I have ran into an issue where the update check has failed on my unifi controller." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/unify-controller-not-checking-for-updates/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-23T08:22:22+09:00" />
+<meta property="article:modified_time" content="2020-08-23T08:22:22+09:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Unify Controller Not Checking for Updates",
+        "headline": "Unify Controller Not Checking for Updates",
+        "alternativeHeadline": "",
+        "description": "
+      
+        I have ran into an issue where the update check has failed on my unifi controller.
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/unify-controller-not-checking-for-updates\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2020",
+        "dateCreated": "2020-08-23T08:22:22.00Z",
+        "datePublished": "2020-08-23T08:22:22.00Z",
+        "dateModified": "2020-08-23T08:22:22.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/unify-controller-not-checking-for-updates\/",
+        "wordCount" : "400",
+        "genre" : [ 
+      
+      "Troubleshooting"
+
+    ],
+        "keywords" : [ 
+      
+      "Raspberry Pi"
+
+    
+      
+        ,
+
+      
+      "Docker"
+
+    
+      
+        ,
+
+      
+      "Unifi"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Unify Controller Not Checking for Updates</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  23/8/2020
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">2-minute read</span>
+          </li>
+        </ul>
+      <p><figure><img src="/images/Posts/002/updatefail.jpg"/>
+</figure>
+
+I have ran into an issue where the update check has failed on my unifi controller. This has been after a container upgrade, or when I have restored from a backup. It didnt send a notification saying that it failed, but I was going through the controller setting and found out it failed. This took some time and tinkering to figure out how to get this up and running. A lot of remedies I found online was to just reinstall your os/distro. This didnt seem viable due to the fact I would either have to reconfigure everything on the fresh install, or restore from backup and roll my 20 sided dice hoping it would work.</p>
+<p>However, I found a <a href="https://community.ui.com/questions/Firmware-files-are-not-loaded-after-Controller-upgrade-to-5-10-19/52c63313-f302-45e6-b6eb-f61daa737c0c">reply</a> to a post on the Unifi commuinity form that got me going in the right direction. Removing and updating the ssl certs that java uses for the update check should fix it. How though? This is a docker container and I need access to that container&rsquo;s operating system. A few momemts later, I came across the command of docker exec. This command does exactly what I needed. You have access to the container&rsquo;s operating system.</p>
+<h3 id="using-docker-exec">Using Docker Exec</h3>
+<p>You will need some grab the name of your controller&rsquo;s docker container.
+<figure><img src="/images/Posts/002/dockername.jpg"/>
+</figure>
+
+You will see in the example that the name of mine is unifi. Next you will use docker exec to log into the container.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker exec -it unifi /bin/bash
+</span></span></code></pre></div><p>You&rsquo;re in! Now lets navigate to the folder where the ssl certs are store on this container.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd /etc/ssl/certs/java/
+</span></span></code></pre></div><p>Next we will remove the cert that is stored in that folder.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rm cacerts
+</span></span></code></pre></div><p>To update the certs stored you will use:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">/usr/sbin/update-ca-certificates -f
+</span></span></code></pre></div><p>Once you that was successfull, you will type exit to log out of the docker container.</p>
+<p>Now that we have updated the new certs, we will reboot the container. You do not have to restart the raspberry pi if you do not want to.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker restart unifi
+</span></span></code></pre></div><p>If you are overly paranoid, like I am, and want to make sure you didnt just trash your container you can check the status of your docker container until it says healthy.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker ps
+</span></span></code></pre></div><p><figure><img src="/images/Posts/002/dockerreboot.jpg"/>
+</figure>
+
+Once you see that it says healthy you should be able to log back in, and confirm your controller is able to check for updates.
+<figure><img src="/images/Posts/002/finalgui.jpg"/>
+</figure>
+
+I hope this troubleshooting walk through has been helpful.</p>
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/unify-controller-on-rapberry-pi/">Unify Controller on Rapberry Pi with Docker</a></li>
+    
+      <li><a href="/post/hosting-e-book-server/">Hosting Your Own EBook Server</a></li>
+    
+      <li><a href="/post/run-nextcloud-on-a-raspberry-pi/">Run Nextcloud on a Raspberry Pi</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/troubleshooting/">Troubleshooting</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/raspberry-pi/">Raspberry Pi</a><a class="tag" href="/tags/docker/">Docker</a><a class="tag" href="/tags/unifi/">Unifi</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

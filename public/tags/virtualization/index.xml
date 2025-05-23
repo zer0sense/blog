@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/tags/virtualization/</link>
+    <description>Recent content in Virtualization on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Aug 2021 13:59:48 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up Active Dirctory Lab With Proxmox</title>
+      <link>http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/</link>
+      <pubDate>Sun, 15 Aug 2021 13:59:48 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/</guid>
+      
+        <description>Setting Up Active Dirctory Lab with Proxmox</description>
+      
+    </item>
+    
+    <item>
+      <title>ESXI Raspberry Pi</title>
+      <link>http://localhost:1313/post/esxi-raspberry-pi/</link>
+      <pubDate>Sun, 01 Nov 2020 13:01:50 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/esxi-raspberry-pi/</guid>
+      
+        <description>Running ESXI on Raspberry Pi</description>
+      
+    </item>
+    
+  </channel>
+</rss>

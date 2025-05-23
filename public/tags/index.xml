@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Aug 2024 00:30:33 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes</title>
+      <link>http://localhost:1313/tags/notes/</link>
+      <pubDate>Wed, 07 Aug 2024 00:30:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/notes/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/docker/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/linux/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>NFS</title>
+      <link>http://localhost:1313/tags/nfs/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/nfs/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Burpsuite</title>
+      <link>http://localhost:1313/tags/burpsuite/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/burpsuite/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CTF</title>
+      <link>http://localhost:1313/tags/ctf/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/ctf/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CyberApocalypse 2022</title>
+      <link>http://localhost:1313/tags/cyberapocalypse-2022/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/cyberapocalypse-2022/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>IDOR</title>
+      <link>http://localhost:1313/tags/idor/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/idor/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>WEB</title>
+      <link>http://localhost:1313/tags/web/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/web/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>XSS</title>
+      <link>http://localhost:1313/tags/xss/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/xss/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Nahamcon2022</title>
+      <link>http://localhost:1313/tags/nahamcon2022/</link>
+      <pubDate>Sun, 01 May 2022 22:18:40 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/nahamcon2022/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>http://localhost:1313/tags/ssh/</link>
+      <pubDate>Sun, 01 May 2022 22:18:40 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/ssh/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>XML</title>
+      <link>http://localhost:1313/tags/xml/</link>
+      <pubDate>Sun, 01 May 2022 10:30:06 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/xml/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sun, 01 May 2022 09:05:47 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/python/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Data Breach</title>
+      <link>http://localhost:1313/tags/data-breach/</link>
+      <pubDate>Wed, 13 Apr 2022 19:16:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/data-breach/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Metasploit</title>
+      <link>http://localhost:1313/tags/metasploit/</link>
+      <pubDate>Sat, 26 Mar 2022 23:18:41 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/metasploit/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Proxmox</title>
+      <link>http://localhost:1313/tags/proxmox/</link>
+      <pubDate>Sun, 15 Aug 2021 13:59:48 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/proxmox/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>http://localhost:1313/tags/virtualization/</link>
+      <pubDate>Sun, 15 Aug 2021 13:59:48 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/virtualization/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/tags/windows/</link>
+      <pubDate>Sun, 15 Aug 2021 13:59:48 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/windows/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>http://localhost:1313/tags/php/</link>
+      <pubDate>Sun, 01 Aug 2021 11:06:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/php/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>THM</title>
+      <link>http://localhost:1313/tags/thm/</link>
+      <pubDate>Sun, 01 Aug 2021 11:06:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/thm/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Docker-Compose</title>
+      <link>http://localhost:1313/tags/docker-compose/</link>
+      <pubDate>Sat, 17 Jul 2021 13:01:51 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/docker-compose/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>http://localhost:1313/tags/raspberry-pi/</link>
+      <pubDate>Sat, 17 Jul 2021 13:01:51 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linpeas</title>
+      <link>http://localhost:1313/tags/linpeas/</link>
+      <pubDate>Fri, 02 Jul 2021 09:29:35 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/linpeas/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>NextCloud</title>
+      <link>http://localhost:1313/tags/nextcloud/</link>
+      <pubDate>Sat, 22 May 2021 10:35:49 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/nextcloud/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/tags/markdown/</link>
+      <pubDate>Sun, 25 Apr 2021 15:08:17 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/markdown/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PDF</title>
+      <link>http://localhost:1313/tags/pdf/</link>
+      <pubDate>Sun, 25 Apr 2021 15:08:17 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/pdf/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Wiki</title>
+      <link>http://localhost:1313/tags/wiki/</link>
+      <pubDate>Sun, 25 Apr 2021 15:08:17 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/wiki/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>http://localhost:1313/tags/ansible/</link>
+      <pubDate>Sat, 06 Feb 2021 11:39:29 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/ansible/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>YAML</title>
+      <link>http://localhost:1313/tags/yaml/</link>
+      <pubDate>Sat, 06 Feb 2021 11:39:29 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/yaml/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ESXI</title>
+      <link>http://localhost:1313/tags/esxi/</link>
+      <pubDate>Sun, 01 Nov 2020 13:01:50 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/esxi/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Bash</title>
+      <link>http://localhost:1313/tags/bash/</link>
+      <pubDate>Mon, 07 Sep 2020 14:55:37 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/bash/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Shells</title>
+      <link>http://localhost:1313/tags/shells/</link>
+      <pubDate>Mon, 07 Sep 2020 14:55:37 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/shells/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>ZSH</title>
+      <link>http://localhost:1313/tags/zsh/</link>
+      <pubDate>Mon, 07 Sep 2020 14:55:37 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/zsh/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Unifi</title>
+      <link>http://localhost:1313/tags/unifi/</link>
+      <pubDate>Sun, 23 Aug 2020 08:22:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/tags/unifi/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

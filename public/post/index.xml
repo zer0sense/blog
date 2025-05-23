@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Dec 2024 00:30:46 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brain Budgeting</title>
+      <link>http://localhost:1313/post/brain-budgeting/</link>
+      <pubDate>Wed, 07 Aug 2024 00:30:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/brain-budgeting/</guid>
+      
+        <description>Brain Budgeting</description>
+      
+    </item>
+    
+    <item>
+      <title>Docker Containers With NFS</title>
+      <link>http://localhost:1313/post/docker-containers-with-nfs/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/docker-containers-with-nfs/</guid>
+      
+        <description>Using NFS for Docker Containers</description>
+      
+    </item>
+    
+    <item>
+      <title>Cyber Apocalypse 2022 - Kryptos Support</title>
+      <link>http://localhost:1313/post/cyber-apocalypse_kryptos/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/cyber-apocalypse_kryptos/</guid>
+      
+        <description>A Web Challenge from HackTheBox&#39;s Cyber Apocalypse 2022</description>
+      
+    </item>
+    
+    <item>
+      <title>Nahamcon2022 Steam Locomotive</title>
+      <link>http://localhost:1313/post/nahamcon2022-steam-locomotive/</link>
+      <pubDate>Sun, 01 May 2022 22:18:40 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/nahamcon2022-steam-locomotive/</guid>
+      
+        <description>Nahamcon 2022 Steam Locomotive</description>
+      
+    </item>
+    
+    <item>
+      <title>Nahamcon2022 EXtravagant</title>
+      <link>http://localhost:1313/post/nahamcon2022-extravagant/</link>
+      <pubDate>Sun, 01 May 2022 10:30:06 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/nahamcon2022-extravagant/</guid>
+      
+        <description>Nahamcon2022 </description>
+      
+    </item>
+    
+    <item>
+      <title>Nahamcon2022 Prisoner</title>
+      <link>http://localhost:1313/post/nahamcon2022-prisoner/</link>
+      <pubDate>Sun, 01 May 2022 09:05:47 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/nahamcon2022-prisoner/</guid>
+      
+        <description>Nahamcon2022 CTF Prisoner Challenge</description>
+      
+    </item>
+    
+    <item>
+      <title>Cash App Data Breach</title>
+      <link>http://localhost:1313/post/cash-app-data-breach/</link>
+      <pubDate>Wed, 13 Apr 2022 19:16:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/cash-app-data-breach/</guid>
+      
+        <description>Cash App Data Breach</description>
+      
+    </item>
+    
+    <item>
+      <title>Metasploit With Docker</title>
+      <link>http://localhost:1313/post/metasploit-with-docker/</link>
+      <pubDate>Sat, 26 Mar 2022 23:18:41 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/metasploit-with-docker/</guid>
+      
+        <description>Run Metasploit with Docker</description>
+      
+    </item>
+    
+    <item>
+      <title>Setting Up Active Dirctory Lab With Proxmox</title>
+      <link>http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/</link>
+      <pubDate>Sun, 15 Aug 2021 13:59:48 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/</guid>
+      
+        <description>Setting Up Active Dirctory Lab with Proxmox</description>
+      
+    </item>
+    
+    <item>
+      <title>Try Hack Me RootMe</title>
+      <link>http://localhost:1313/post/try-hack-me-rootme/</link>
+      <pubDate>Sun, 01 Aug 2021 11:06:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/try-hack-me-rootme/</guid>
+      
+        <description>TryHackMe - RootMe</description>
+      
+    </item>
+    
+    <item>
+      <title>Hosting Your Own EBook Server</title>
+      <link>http://localhost:1313/post/hosting-e-book-server/</link>
+      <pubDate>Sat, 17 Jul 2021 13:01:51 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/hosting-e-book-server/</guid>
+      
+        <description>Hosting Your Own E-Book Server </description>
+      
+    </item>
+    
+    <item>
+      <title>THM Lazy Admin</title>
+      <link>http://localhost:1313/post/thm-lazy-admin/</link>
+      <pubDate>Fri, 02 Jul 2021 09:29:35 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/thm-lazy-admin/</guid>
+      
+        <description>Try Hack Me - Lazy Admin</description>
+      
+    </item>
+    
+    <item>
+      <title>THM Pickle Rick</title>
+      <link>http://localhost:1313/post/thm-pickle-rick/</link>
+      <pubDate>Wed, 30 Jun 2021 19:22:56 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/thm-pickle-rick/</guid>
+      
+        <description>Try Hack Me - Pickle Rick</description>
+      
+    </item>
+    
+    <item>
+      <title>Run Nextcloud on a Raspberry Pi</title>
+      <link>http://localhost:1313/post/run-nextcloud-on-a-raspberry-pi/</link>
+      <pubDate>Sat, 22 May 2021 10:35:49 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/run-nextcloud-on-a-raspberry-pi/</guid>
+      
+        <description>How to Setup NextCloud on Your Raspberry Pi</description>
+      
+    </item>
+    
+    <item>
+      <title>How Pandoc Saved Me Hours</title>
+      <link>http://localhost:1313/post/how-pandoc-saved-me-hours/</link>
+      <pubDate>Sun, 25 Apr 2021 15:08:17 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/how-pandoc-saved-me-hours/</guid>
+      
+        <description>Use Pandoc to Convert Document Formats</description>
+      
+    </item>
+    
+    <item>
+      <title>Make Any Linux Distro Yours With Ansible</title>
+      <link>http://localhost:1313/post/make-any-linx-distro-yours-with-ansible/</link>
+      <pubDate>Sat, 06 Feb 2021 11:39:29 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/make-any-linx-distro-yours-with-ansible/</guid>
+      
+        <description>Using Ansible Pull to Install Programs and configurations</description>
+      
+    </item>
+    
+    <item>
+      <title>MediaWiki on Docker</title>
+      <link>http://localhost:1313/post/media-wiki-docker/</link>
+      <pubDate>Tue, 19 Jan 2021 20:21:55 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/media-wiki-docker/</guid>
+      
+        <description>Running MediaWiki with Docker</description>
+      
+    </item>
+    
+    <item>
+      <title>ESXI Raspberry Pi</title>
+      <link>http://localhost:1313/post/esxi-raspberry-pi/</link>
+      <pubDate>Sun, 01 Nov 2020 13:01:50 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/esxi-raspberry-pi/</guid>
+      
+        <description>Running ESXI on Raspberry Pi</description>
+      
+    </item>
+    
+    <item>
+      <title>New Shell Who This</title>
+      <link>http://localhost:1313/post/new-shell-who-this/</link>
+      <pubDate>Mon, 07 Sep 2020 14:55:37 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/new-shell-who-this/</guid>
+      
+        <description>Switching to the ZSH shell from BASH</description>
+      
+    </item>
+    
+    <item>
+      <title>Basic SSH Key Management I Commonly Use</title>
+      <link>http://localhost:1313/post/basic-ssh-key-management-i-commonly-use/</link>
+      <pubDate>Sat, 29 Aug 2020 14:47:23 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/basic-ssh-key-management-i-commonly-use/</guid>
+      
+        <description>Basic SSH Key Management I Commonly Use</description>
+      
+    </item>
+    
+    <item>
+      <title>Unify Controller Not Checking for Updates</title>
+      <link>http://localhost:1313/post/unify-controller-not-checking-for-updates/</link>
+      <pubDate>Sun, 23 Aug 2020 08:22:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/unify-controller-not-checking-for-updates/</guid>
+      
+        <description>I have ran into an issue where the update check has failed on my unifi controller.</description>
+      
+    </item>
+    
+    <item>
+      <title>Unify Controller on Rapberry Pi with Docker</title>
+      <link>http://localhost:1313/post/unify-controller-on-rapberry-pi/</link>
+      <pubDate>Mon, 10 Aug 2020 21:39:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/unify-controller-on-rapberry-pi/</guid>
+      
+        <description>Running Unify Controller on Raspberry Pi with Docker</description>
+      
+    </item>
+    
+  </channel>
+</rss>

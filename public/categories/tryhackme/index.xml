@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TryHackMe on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/categories/tryhackme/</link>
+    <description>Recent content in TryHackMe on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Aug 2021 11:06:58 +0900</lastBuildDate><atom:link href="http://localhost:1313/categories/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Try Hack Me RootMe</title>
+      <link>http://localhost:1313/post/try-hack-me-rootme/</link>
+      <pubDate>Sun, 01 Aug 2021 11:06:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/try-hack-me-rootme/</guid>
+      
+        <description>TryHackMe - RootMe</description>
+      
+    </item>
+    
+    <item>
+      <title>THM Lazy Admin</title>
+      <link>http://localhost:1313/post/thm-lazy-admin/</link>
+      <pubDate>Fri, 02 Jul 2021 09:29:35 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/thm-lazy-admin/</guid>
+      
+        <description>Try Hack Me - Lazy Admin</description>
+      
+    </item>
+    
+    <item>
+      <title>THM Pickle Rick</title>
+      <link>http://localhost:1313/post/thm-pickle-rick/</link>
+      <pubDate>Wed, 30 Jun 2021 19:22:56 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/thm-pickle-rick/</guid>
+      
+        <description>Try Hack Me - Pickle Rick</description>
+      
+    </item>
+    
+  </channel>
+</rss>

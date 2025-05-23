@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        Docker Containers With NFS |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content="Using NFS for Docker Containers"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/docker-containers-with-nfs/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="Docker Containers With NFS"/>
+<meta name="twitter:description" content="Using NFS for Docker Containers"/>
+
+
+
+  
+  <meta property="og:title" content="Docker Containers With NFS" />
+<meta property="og:description" content="Using NFS for Docker Containers" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/docker-containers-with-nfs/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-07-26T02:35:47+00:00" />
+<meta property="article:modified_time" content="2024-07-26T02:35:47+00:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Docker Containers With NFS",
+        "headline": "Docker Containers With NFS",
+        "alternativeHeadline": "",
+        "description": "
+      Using NFS for Docker Containers
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/docker-containers-with-nfs\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2024",
+        "dateCreated": "2024-07-26T02:35:47.00Z",
+        "datePublished": "2024-07-26T02:35:47.00Z",
+        "dateModified": "2024-07-26T02:35:47.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/docker-containers-with-nfs\/",
+        "wordCount" : "888",
+        "genre" : [ 
+      
+      "Tutorials"
+
+    
+      
+        ,
+
+      
+      "Projects"
+
+    
+      
+        ,
+
+      
+      "Linux"
+
+    ],
+        "keywords" : [ 
+      
+      "Docker"
+
+    
+      
+        ,
+
+      
+      "NFS"
+
+    
+      
+        ,
+
+      
+      "Linux"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Docker Containers With NFS</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  26/7/2024
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">5-minute read</span>
+          </li>
+        </ul>
+      <p>Containerization is such an amazing tool, and will be a part of enterprise infrastructure going forward. This technology has peaked my interest and curiosity for a few years now. One thing that I was curious about, was persistence in these micro services. How would I create persistence if I was to deploy a service with a database in an enterprise. I would probably have access to some kind of storage server, and would have access to network shares. That is when I settled looking into deploying a NFS server and using that for my docker persistence.</p>
+<h2 id="nfs">NFS</h2>
+<p>The network file system (NFS) offers the flexibility, security, and customization I was looking for. I was so thankful for the <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04">digital ocean</a> article. This was such a clear and very beginner friendly.</p>
+<p>What does this give our containers? It doesn&rsquo;t matter if my container gets deleted, migrated, or updated the key data is saved. I do not run my docker container on the same server I am using for my NFS server. This gives me more flexibility to experiment with different docker deployments. For instance, I have ran nextcloud and my own wiki on different VM&rsquo;s and hardware. They both started on a raspberry pi, but now live in a proxmox VM off my old gaming server. I can feel comfortable jumping back and forth between servers because my data is persistent. If i had to re-deploy my wiki from scratch every time I re-deployed the container I would be very discouraged to maintain it.</p>
+<h3 id="using-nfs-via-docker-compose">Using NFS via Docker Compose</h3>
+<p>You can integrate a NFS share as a docker volume. Don&rsquo;t be like me and remember to create the folder on your share <strong>before</strong> you try deploying your container. You want to create your folder path on your share, and make sure your permissions/owner is set up correctly.</p>
+<p>I typically define my volume in the beginning of my docker compose to reference later.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">config</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">driver_opts</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;nfs&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">o</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;addr=&lt;ip address&gt;,nolock,soft,rw&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">device</span><span class="p">:</span><span class="w"> </span><span class="l">&#34;:/&lt;NFS share path&gt;</span><span class="w">
+</span></span></span></code></pre></div><p>I am going to break a couple of things down from this example. To refer to this later in your config the name of this volume is <code>config</code>. This means later in the volumes section of your docker container you&rsquo;re going to define <code>- config:/config</code>. This will tell the docker container to use that NFS share as the docker containers config directory.</p>
+<p>Under the <code>driver_opts</code> there is a couple of takeaways from that as well. The <code>o:</code> is the NFS server with the nolock, soft, and rw options that I picked up from the digital ocean article. The <code>device</code> is the share path of that NFS server. Breaking down the typical NFS file share as <code>nfs://192.168.1.100:/share/docker</code> is just broken up in two different options. The <code>o: &quot;192.168.1.100,nolock,soft,rw&quot;</code> and <code>device: &quot;:/share/docker</code>.</p>
+<h3 id="using-nfs-with-system-mount">Using NFS with System Mount</h3>
+<p>This method is creating a mount point in the VM itself for the NFS share. The same warning for the NFS share folder applies to this as well. You want to make sure the folder path on the NFS server is created, and that you create a folder on your docker VM to mount your NFS share to. Also, make sure your owner/permissions are set correctly.</p>
+<p>Lets use the same NFS share example of <code>nfs://192.168.1.100:/share/docker</code> to use for this method. We will use the VM folder name of nfs.</p>
+<p>In your terminal lets do a test mount <code>sudo mount -t nfs 192.16.1.100:/share/docker nfs</code>. Once this is done go ahead and change directory into your nfs folder. Create a test file <code>touch test.txt</code>. Go to your NFS server and check that the file was created <strong>on the server</strong>. Once you have verified the NFS share is working correctly you can edit your fstab on your linux VM that you are running your docker container on. Use your favorite text editor and edit the <code>/etc/fstab</code> to add the following.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">192.168.1.100:/share/docker /home/user/nfs nfs rw,hard,intr,rsize<span class="o">=</span>8192,wsize<span class="o">=</span>8192,timeo<span class="o">=</span><span class="m">14</span> <span class="m">0</span> <span class="m">0</span>
+</span></span></code></pre></div><p>The break down of this gets a little more interesting. How this really breaks down is <code>ipaddress:/sharepath /directoryonserver filesystemtype options</code>. At the very minimum for options I recommend rw for read/write. The other options I have listed were from some tireless troubleshooting research on NFS. <code>rsize</code> and <code>wsize</code> loosely translate to read and write size and the <code>timeo</code> is timeout.</p>
+<p>Now your mount will happen automatically everytime your system boots. This could be an issue if your path or there is an issue with the share. This is why the test mount in crucial or your VM can stop booting.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>I have come back to using this method and figuring out failures for a while now. The biggest thing I discovered recently is that NFS and docker can be very very picky when it comes to folder permissions and ownership. My general rule of thumb going forward is to use the docker compose method for folders like config folders and to use the system mount if you are running something like a database/apache server that might require particular permission schemes in order to function. I have had to start my container and data from scratch multiple times when it came to my nextcloud and wiki container because of this. I have been running without an issue for the past few months since figuring this out, and I had to share the experience with you all.</p>
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/metasploit-with-docker/">Metasploit With Docker</a></li>
+    
+      <li><a href="/post/setting-up-active-dirctory-lab-with-proxmox/">Setting Up Active Dirctory Lab With Proxmox</a></li>
+    
+      <li><a href="/post/hosting-e-book-server/">Hosting Your Own EBook Server</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/tutorials/">Tutorials</a><a class="category" href="/categories/projects/">Projects</a><a class="category" href="/categories/linux/">Linux</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/docker/">Docker</a><a class="tag" href="/tags/nfs/">NFS</a><a class="tag" href="/tags/linux/">Linux</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

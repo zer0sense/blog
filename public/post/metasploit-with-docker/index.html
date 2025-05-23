@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        Metasploit With Docker |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content="Run Metasploit with Docker"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/metasploit-with-docker/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="Metasploit With Docker"/>
+<meta name="twitter:description" content="Run Metasploit with Docker"/>
+
+
+
+  
+  <meta property="og:title" content="Metasploit With Docker" />
+<meta property="og:description" content="Run Metasploit with Docker" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/metasploit-with-docker/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-03-26T23:18:41+09:00" />
+<meta property="article:modified_time" content="2022-03-26T23:18:41+09:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Metasploit With Docker",
+        "headline": "Metasploit With Docker",
+        "alternativeHeadline": "",
+        "description": "
+      Run Metasploit with Docker
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/metasploit-with-docker\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-03-26T23:18:41.00Z",
+        "datePublished": "2022-03-26T23:18:41.00Z",
+        "dateModified": "2022-03-26T23:18:41.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/metasploit-with-docker\/",
+        "wordCount" : "657",
+        "genre" : [ 
+      
+      "Pentesting"
+
+    
+      
+        ,
+
+      
+      "Tutorials"
+
+    
+      
+        ,
+
+      
+      "Ethical Hacking"
+
+    ],
+        "keywords" : [ 
+      
+      "Docker"
+
+    
+      
+        ,
+
+      
+      "CTF"
+
+    
+      
+        ,
+
+      
+      "Linux"
+
+    
+      
+        ,
+
+      
+      "Metasploit"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Metasploit With Docker</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  26/3/2022
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">4-minute read</span>
+          </li>
+        </ul>
+      <p>I have a goal to be able to choose my own Linux distro and be able to use common pentesting tools. One of the most well known pentesting tools is Metasploit. This whole framework has such a variety of tools and exploits built in and is updated regularly. This, for me, is a must have no matter what OFFSEC thinks. I do understand that there are other difficulties that can be introduced by running docker, but I think we can overcome those and realize then benefits. What benefits? I am glad you asked. Running docker images includes all dependencies required to run the binary. I am a huge fan of docker for this. Opinions aside lets get this installed and running. You can see if this is a solution for you.</p>
+<h3 id="installation">Installation</h3>
+<p>Rapid 7 has a github that includes the docker files included. The first thing we want to do is clone that to our machine. I will be cloning it to my /opt directory.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/rapid7/metasploit-framework
+</span></span></code></pre></div><p>Now we will change into that directory and make some changes. I don&rsquo;t make a habit of switching to the root user to run anything, but this was the only way I was able to get these text files to work. To do this I typed <code>su root</code>. If you are unable to switch because you dont know the password you can change it with <code>sudo passwd root</code>. I found this through the metasploit repo and was able to test out a <a href="https://tryhackme.com">Tryhackme</a> room I recently did to test a meterpreter shell successfully. We are going to create a file for docker first.</p>
+<p>We will create this file as root with <code>touch docker-compose.local.override.yml</code>. Open with your favorite text editor and paste in the following.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ms</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="c"># example of setting LHOST</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">LHOST</span><span class="p">:</span><span class="w"> </span><span class="m">192.168.1.5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># example of adding more ports</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="m">8080</span><span class="p">:</span><span class="m">8080</span><span class="w">
+</span></span></span></code></pre></div><p>Please pay attention to the <strong>LHOST</strong> portion of this. I set this to my physical machine&rsquo;s IP address. When trying the exploit with metasploit earlier without this enviroment variable set I was not able to get a meterpreter session to connect back to me.</p>
+<p>While still root we are going to do a little docker magic to get the container to see this information.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;COMPOSE_FILE=./docker-compose.yml:./docker-compose.override.yml:./docker-compose.local.override.yml&#34;</span> &gt;&gt; .env
+</span></span></code></pre></div><p>You can leave your root shell now by typing exit.</p>
+<h3 id="using-metasploit">Using Metasploit</h3>
+<p>While you are in the metasploit-framework dirctory you can start metasploit with <code>./docker/bin/msfconsole</code>. You will see it buidling the container and you will get your regular metasploit console <code>msf6&gt;</code>. If you get permission issues you may need to run docker commands with sudo if you are not in the docker group on your host machine. This will also change your path for msfvenom as well <code>./docker/bin/msfvenom</code>.</p>
+<p>One way to make using this docker file a little more user friendly and type less is to set up aliases. I definitely dont want to type in the full path for running metasploit. You can do this by adding this to your $PATH, but I chose to set an alias for these. To set a permanent alias you will want to add it to your <code>.bashrc</code> or <code>.zshrc</code> file. I have a little different setup where I have an alias file that will work with bash or zsh. That is a whole different article for another day.</p>
+<p>To add the alias edit your file and edit it to where you have your metasploit-framework folder that you cloned earlier.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">msfconsole</span><span class="o">=</span><span class="s1">&#39;sudo /opt/metasploit-framework/docker/bin/msfconsole&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">alias</span> <span class="nv">msfvenom</span><span class="o">=</span><span class="s1">&#39;sudo /opt/metasploit-framework/docker/bin/msfvenom&#39;</span>
+</span></span></code></pre></div><p>Save your changes and you can reload your shell by typing <code>bash</code> or <code>zsh</code> depending on what shell you are using. Now by typing <code>msfconsole</code> or <code>msfvenom</code> it will point to the docker image and save you some keystrokes. If it is not working correctly check your spelling on your command and your path.</p>
+<p>I hope you find this article enjoyable and give a look at docker to simplify more of your workflow.</p>
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/docker-containers-with-nfs/">Docker Containers With NFS</a></li>
+    
+      <li><a href="/post/cyber-apocalypse_kryptos/">Cyber Apocalypse 2022 - Kryptos Support</a></li>
+    
+      <li><a href="/post/nahamcon2022-steam-locomotive/">Nahamcon2022 Steam Locomotive</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/pentesting/">Pentesting</a><a class="category" href="/categories/tutorials/">Tutorials</a><a class="category" href="/categories/ethical-hacking/">Ethical Hacking</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/docker/">Docker</a><a class="tag" href="/tags/ctf/">CTF</a><a class="tag" href="/tags/linux/">Linux</a><a class="tag" href="/tags/metasploit/">Metasploit</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

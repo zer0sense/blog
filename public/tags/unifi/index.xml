@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unifi on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/tags/unifi/</link>
+    <description>Recent content in Unifi on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 23 Aug 2020 08:22:22 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/unifi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unify Controller Not Checking for Updates</title>
+      <link>http://localhost:1313/post/unify-controller-not-checking-for-updates/</link>
+      <pubDate>Sun, 23 Aug 2020 08:22:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/unify-controller-not-checking-for-updates/</guid>
+      
+        <description>I have ran into an issue where the update check has failed on my unifi controller.</description>
+      
+    </item>
+    
+    <item>
+      <title>Unify Controller on Rapberry Pi with Docker</title>
+      <link>http://localhost:1313/post/unify-controller-on-rapberry-pi/</link>
+      <pubDate>Mon, 10 Aug 2020 21:39:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/unify-controller-on-rapberry-pi/</guid>
+      
+        <description>Running Unify Controller on Raspberry Pi with Docker</description>
+      
+    </item>
+    
+  </channel>
+</rss>

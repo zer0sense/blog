@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        Setting Up Active Dirctory Lab With Proxmox |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content="Setting Up Active Dirctory Lab with Proxmox"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="Setting Up Active Dirctory Lab With Proxmox"/>
+<meta name="twitter:description" content="Setting Up Active Dirctory Lab with Proxmox"/>
+
+
+
+  
+  <meta property="og:title" content="Setting Up Active Dirctory Lab With Proxmox" />
+<meta property="og:description" content="Setting Up Active Dirctory Lab with Proxmox" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-08-15T13:59:48+09:00" />
+<meta property="article:modified_time" content="2021-08-15T13:59:48+09:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Setting Up Active Dirctory Lab With Proxmox",
+        "headline": "Setting Up Active Dirctory Lab With Proxmox",
+        "alternativeHeadline": "",
+        "description": "
+      Setting Up Active Dirctory Lab with Proxmox
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/setting-up-active-dirctory-lab-with-proxmox\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-08-15T13:59:48.00Z",
+        "datePublished": "2021-08-15T13:59:48.00Z",
+        "dateModified": "2021-08-15T13:59:48.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/setting-up-active-dirctory-lab-with-proxmox\/",
+        "wordCount" : "1125",
+        "genre" : [ 
+      
+      "Tutorials"
+
+    
+      
+        ,
+
+      
+      "Linux"
+
+    
+      
+        ,
+
+      
+      "Projects"
+
+    ],
+        "keywords" : [ 
+      
+      "Virtualization"
+
+    
+      
+        ,
+
+      
+      "Proxmox"
+
+    
+      
+        ,
+
+      
+      "Linux"
+
+    
+      
+        ,
+
+      
+      "Windows"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Setting Up Active Dirctory Lab With Proxmox</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  15/8/2021
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">6-minute read</span>
+          </li>
+        </ul>
+      <p>I am currently making my way through the <a href="https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course">Practical Ethical Hacking Course</a>, and there is an active directory lab to be set up in the course. I could set up the windows server and clients on my main machine, but I&rsquo;m pretty sure that my aging PC will be begging for a mercy kill. I have some even older hardware that I save from being e-waste that I can use for setting this up, and have my main machine not curse at me in binary.</p>
+<p>Why Proxmox? Why not ESXI? Well I am a fan of using open source software when I can. Why? Licensing is easier to understand for the most part, and a lot of the content I normally consume for Linux has a ton of Proxmox tutorials and tweaks. I could of also used something like XCP-NG, but just flipped a coin and chose Proxmox.</p>
+<h2 id="installing-and-configuring-proxmox">Installing and Configuring Proxmox</h2>
+<p>Installing Proxmox is pretty much like any other operating system.First thing you want to do is head to the <a href="https://proxmox.com/en/downloads/category/proxmox-virtual-environment">Proxmox</a> and download the ISO image for Proxmox. Get a USB drive and use something like <a href="https://www.balena.io/etcher/">etcher</a> to extract the ISO onto your USB drive. Go through the prompts and install the OS. Word of advice, set the IP to static. I tried using a DHCP reservation and the MAC can change causing a lot of unnecessary troubleshooting.</p>
+<p>I went ahead and added the no-subscription sources, since this isn&rsquo;t a production machine for a business and I don&rsquo;t plan on getting a subscription. You can do this by editing your <code>/etc/apt/sources.list</code> file and adding <code>deb http://download.proxmox.com/debian bullseye pve-no-subscription</code>. You can replace <code>bullseye</code> with whatever version is in the other examples for Debian. Next comment out the line for the enterprise list if you plan on using the non-subscription portion. Edit the <code>/etc/apt/sources.list.d/pve-enterprise.list</code> and comment out the line. Once you have everything worked out I would upgrade all the packages that have been pulled from the repos. I also reboot after the update to get everything fresh and make sure there were no issues.</p>
+<h2 id="creating-windows-vm">Creating Windows VM</h2>
+<p>Now that we have our type-1 hypervisor running lets get our Windows ISO&rsquo;s so we can set up our Active Directory environment. I downloaded a copy of <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2019">Windows Server 2019</a> and a copy of <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise">Windows 10 Enterprise</a>. While you are download those also download a copy of the drivers to setup you can find that <a href="https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md">here</a>.</p>
+<p>The storage setup will be different for everyone, but the idea is the same. Highlight your node and expand it. You will see disk icons with the disks you have available. Highlight the disk, go to ISO&rsquo;s, and if it is blank you can upload your images you downloaded.</p>
+<figure><img src="/images/Posts/012/upload.jpg"/>
+</figure>
+
+<p>Once you have all your ISO&rsquo;s uploaded we are ready to create our windows VM. On the top right of your screen you will see the Create VM icon or you can right click on your node.</p>
+<figure><img src="/images/Posts/012/createvm.jpg"/>
+</figure>
+
+<p>I am going to start with the Windows Server image. After clicking on create VM. Populate the VM ID and Name. The VM ID will change the order on which it is displayed, so if you are particular about that keep that in mind.</p>
+<p>Click on the OS tab and select where you uploaded the ISO&rsquo;s from earlier and select the ISO image. Also, pay attention to the Guest OS. Make sure it is Microsoft Windows, and the version matches.</p>
+<figure><img src="/images/Posts/012/guestos.jpg"/>
+</figure>
+
+<p>Go to the system tab and the only thing you want to do is enable the Qemu agent. Everything else can stay default.</p>
+<p>On the the hard disk tab. There will be a few changes here. First, change the Bus/Device to SCSI. Next, choose Write Back under the Cache tab, and enable discard. You want to make sure Storage is pointed towards the correct storage location and change the Disk Size to fit your needs.</p>
+<figure><img src="/images/Posts/012/guesthdd.jpg"/>
+</figure>
+
+<p>The CPU and memory tab are completely up to the hardware you are running. The more you can spare the better, but I am running on slim margins here.</p>
+<p>Lastly, go to the network tab and for Model choose the VirtIO (paravirtualized) option.</p>
+<p>Review your settings under the confirm tab, but make sure Start after created is <strong>NOT</strong> clicked. We have some other things to do before we start this VM up.</p>
+<p>Remember that VirtIO image you downloaded earlier. This is where it comes in. After your VM is created click on it and go to Hardware. Click on Add and select CD/DVD drive. On the Bus/Device line leave IDE but change the ID to 3. Choose your storage device where the ISO is located and choose the ISO. Then click create.</p>
+<figure><img src="/images/Posts/012/guestvirt.jpg"/>
+</figure>
+
+<p>Great! Now start the VM on the top right and click on Console. Go through the normal prompts for installing windows 2019 with desktop enviroment., and when it asks if you want to upgrade or custom choose <strong>custom</strong>. You will see a blank screen at first, so click load driver and browse. Navigate to the other CD drive, which is drive E: in my case, go to vioscsi. Click the 2k19 and select the amd64 folder. You will have a Red Had VirtIO SCSI driver click next and let it scan. After the scan, you should now see a drive with the size you specified earlier. Click next and finish installing Windows Server.</p>
+<p>One thing to note with Proxmox, to send the Control Alt Delete command click the arrow halfway down on the left hand side in the Console Window to expand it. The first option that looks like a keycap with the letter A on it, click that. The very last option is that Control Alt Delete.</p>
+<figure><img src="/images/Posts/012/wincad.jpg"/>
+</figure>
+
+<p>Log into your fresh installed Windows 2019, and lets get the rest of the drivers installed. Click on any of the Other Devices with yellow triangles, and use the Browse my computer option. Choose browse and there is no need to drill down into the folders. Make sure the CD Drive with the virtio image is highlighted and click ok. Make sure the include subfolders box is checked and click next. When prompted, choose install. Repeat this until all your drivers are installed.</p>
+<p>The guest agent will be the last piece of software to install before you can dive in and set up your lab. Click on the file explorer icon on the bottom of the screen and click This PC. Go to your CD drive and find the guest-agent folder. Choose the 64 bit executable and let it install.</p>
+<p>For your Windows 10 Enterprise go through the exact same setup process. The only exception is when you are choosing the SCSI driver choose w 10 folder.</p>
+<p>Below are the Youtube videos that got me through this installation and blog post.</p>
+<h2 id="hahahugoshortcode19s6hbhb">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/kOdf4_QPrZw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GoZaMgEgrHw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/docker-containers-with-nfs/">Docker Containers With NFS</a></li>
+    
+      <li><a href="/post/metasploit-with-docker/">Metasploit With Docker</a></li>
+    
+      <li><a href="/post/esxi-raspberry-pi/">ESXI Raspberry Pi</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/tutorials/">Tutorials</a><a class="category" href="/categories/linux/">Linux</a><a class="category" href="/categories/projects/">Projects</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/virtualization/">Virtualization</a><a class="tag" href="/tags/proxmox/">Proxmox</a><a class="tag" href="/tags/linux/">Linux</a><a class="tag" href="/tags/windows/">Windows</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        Make Any Linux Distro Yours With Ansible |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content="Using Ansible Pull to Install Programs and configurations"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/make-any-linx-distro-yours-with-ansible/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="Make Any Linux Distro Yours With Ansible"/>
+<meta name="twitter:description" content="Using Ansible Pull to Install Programs and configurations"/>
+
+
+
+  
+  <meta property="og:title" content="Make Any Linux Distro Yours With Ansible" />
+<meta property="og:description" content="Using Ansible Pull to Install Programs and configurations" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/make-any-linx-distro-yours-with-ansible/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-02-06T11:39:29+09:00" />
+<meta property="article:modified_time" content="2021-02-06T11:39:29+09:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Make Any Linux Distro Yours With Ansible",
+        "headline": "Make Any Linux Distro Yours With Ansible",
+        "alternativeHeadline": "",
+        "description": "
+      Using Ansible Pull to Install Programs and configurations
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/make-any-linx-distro-yours-with-ansible\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2021",
+        "dateCreated": "2021-02-06T11:39:29.00Z",
+        "datePublished": "2021-02-06T11:39:29.00Z",
+        "dateModified": "2021-02-06T11:39:29.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/make-any-linx-distro-yours-with-ansible\/",
+        "wordCount" : "1117",
+        "genre" : [ 
+      
+      "Tutorials"
+
+    
+      
+        ,
+
+      
+      "Projects"
+
+    
+      
+        ,
+
+      
+      "Linux"
+
+    ],
+        "keywords" : [ 
+      
+      "Ansible"
+
+    
+      
+        ,
+
+      
+      "YAML"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Make Any Linux Distro Yours With Ansible</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  6/2/2021
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">6-minute read</span>
+          </li>
+        </ul>
+      <p>During my consumption of tech YouTube content I came across a video talking about Ansible Pull. I am familiar with Ansible, so I queue it up. As soon as I finished the video this project came to mind.</p>
+<p>I know a lot of linux desktop users use git to store their rc files and config files. There is nothing wrong with doing this, but I thought of doing this using a small amount of power from Ansible. The goal of this is to pull a base deployment of programs I like and pull my personal config files and rc files (bash.rc, zsh.rc, and so on).</p>
+<p>This is my first project with Ansible and pretty much my first project that is very coding dependent.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>The way I am using Ansible pull is by using a public <a href="https://github.com/zer0sense/ansible_desktop">github repo</a>. You will need to install Ansible before attempting to use this, but it is pretty standard in any package manager you use.</p>
+<p>You can see if the PC you are at has Ansible installed by typing</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ansible --version
+</span></span></code></pre></div><p>Ansible pull will use the local.yml in the github repository to run the plays. For the files I want to create there is a Files directory in the github repo as well. The files I have included are for my bashrc, zshrc, powerlevel 10k zsh theme, alias file, and others. This was key to me because no matter what my linux distro I definitely want these to be the same.</p>
+<p>The programs I want when I do a fresh install of linux are also in this playbook.</p>
+<blockquote>
+<ul>
+<li>htop</li>
+<li>tmux</li>
+<li>neovim</li>
+<li>terminator</li>
+<li>neofetch</li>
+<li>zsh</li>
+<li>timeshift</li>
+<li>syncthing</li>
+<li>spice-vdagent</li>
+<li>curl</li>
+<li>Sublime Text Editor</li>
+</ul>
+</blockquote>
+<p>The most rewarding part of this playbook was figuring out that I could use git and clone any repo through Ansible as well. I used this for ohmyzsh, powerlevel10k theme, and nerd fonts. By using the git module and file copy module I have a standard desktop no matter where I call my linux home.</p>
+<h2 id="nuances">Nuances</h2>
+<p>With this being a learn as I go project there were some obstacles I had to think of creative ways to work around.</p>
+<p>The first one was user variables. This was by far the most frustrating to figure out. The solution was to use sudo to update your package manager and chain the command for the Ansible pull after that.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt update &amp;&amp; ansible-pull -U https://github.com/zer0sense/ansible_desktop
+</span></span></code></pre></div><p>If the whole playbook was run as root then all the files paths and rc files are for the root user. This wasn&rsquo;t what I wanted. I wanted to be able to copy them as the current user no matter the user name. What the sudo use gives us though is for the plays that require sudo the authentication has already happened, and it shouldn&rsquo;t time out or require the sudo password again. Then running the Ansible pull command not being privileged the current user is the variables being used. I tested this on multiple distro&rsquo;s and package managers with multiple different usernames. To say I was ecstatic when it work is an understatement.</p>
+<p>Another nuance is the nerd font install script. There is something with the install script that comes with the repo, and the git module in Ansible pull that does not get along. I couldn&rsquo;t find a way in the playbook to make this work, so I included the path to the install script on the readme in the github repo.</p>
+<p>There is an error with neovim, but it is not reproducible on all the distros I tested. If you do a checkhealth in neovim and get a shada error I included the fix I found while googling.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">nvim - NORC
+</span></span></code></pre></div><p>I found one issue with sublime text editor that the desktop file does not populate a picture in the application icon in Ubuntu only. This worked fine in other Debian based distros, but for some reason Ubuntu didn&rsquo;t pull the icon to populate the picture. If you would like to use your package manager to install sublime text instead; you can visit the sublime text webpage <a href="https://www.sublimetext.com/3">here</a></p>
+<p>Last little nuance about this playbook is that it this is meant for a one time pull from a fresh install. I found that if you run the playbook again after oh my zsh is installed it will cause an error that the directory already exists, and it will stop the playbook. If you do want to run it again you will have to remove the directory.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rm -rf ~/.oh-my-zsh
+</span></span></code></pre></div><h2 id="how-to-deploy">How To Deploy</h2>
+<p>First, make sure you have ansible installed. This will include ansible pull, and is available in the package managers I have tried.</p>
+<p>Second, copy and paste this into the command line. There are two variants; one for distros using APT and the other is PACMAN. If you are using another package manager substitute the update command to whatever your package manager syntax.</p>
+<p><strong>For Apt</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo apt update &amp;&amp; ansible-pull -U https://github.com/zer0sense/ansible_desktop
+</span></span></code></pre></div><p><strong>For PACMAN</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo pacman -Sy &amp;&amp; ansible-pull -U https://github.com/zer0sense/ansible_desktop
+</span></span></code></pre></div><p>This playbook might take a while, and it might not display a proper progress bar, but believe in the process. You will get a report once the playbook has finished, and you want to make sure you see no errors.</p>
+<figure><img src="/images/Posts/007/playbook_results.jpg"/>
+</figure>
+
+<p>I had to move some of the plays around to make sure that all the plays that required elevated privileges are at the top to take advantage of the cached authentication window.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This was an amazing first project, and the community I met across multiple discords were extremely helpful. This is just a fraction of the power of Ansible and automation. I know there might be people reading this saying well I can just do that with <em>insert the way you do it</em>, and that is great. However, once you start looking at everything that you can do with all the modules of Ansible, the creative gears just start cranking away.</p>
+<p>I have another follow up project to this one in mind, and I want to do the same idea but make it penetration testing themed. The goal is no matter what linux distro you are on you have all your pentesting tools and personal configurations no matter the distro you are on. Kali is a great distro, but I want to have that type of collection and other tools found across github to be installed no matter what I choose to use.</p>
+<p>I hope you find this useful, and that if you do please fork it in github. Make it your own personal playbook.</p>
+<p>The Video below is what sparked this project. Please take a look, and see if this can inspire you to play with Ansible and automation too.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/gIDywsGBqf4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/media-wiki-docker/">MediaWiki on Docker</a></li>
+    
+      <li><a href="/post/brain-budgeting/">Brain Budgeting</a></li>
+    
+      <li><a href="/post/docker-containers-with-nfs/">Docker Containers With NFS</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/tutorials/">Tutorials</a><a class="category" href="/categories/projects/">Projects</a><a class="category" href="/categories/linux/">Linux</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/ansible/">Ansible</a><a class="tag" href="/tags/yaml/">YAML</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

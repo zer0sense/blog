@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/categories/projects/</link>
+    <description>Recent content in Projects on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jul 2024 02:35:47 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Containers With NFS</title>
+      <link>http://localhost:1313/post/docker-containers-with-nfs/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/docker-containers-with-nfs/</guid>
+      
+        <description>Using NFS for Docker Containers</description>
+      
+    </item>
+    
+    <item>
+      <title>Setting Up Active Dirctory Lab With Proxmox</title>
+      <link>http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/</link>
+      <pubDate>Sun, 15 Aug 2021 13:59:48 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/setting-up-active-dirctory-lab-with-proxmox/</guid>
+      
+        <description>Setting Up Active Dirctory Lab with Proxmox</description>
+      
+    </item>
+    
+    <item>
+      <title>Hosting Your Own EBook Server</title>
+      <link>http://localhost:1313/post/hosting-e-book-server/</link>
+      <pubDate>Sat, 17 Jul 2021 13:01:51 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/hosting-e-book-server/</guid>
+      
+        <description>Hosting Your Own E-Book Server </description>
+      
+    </item>
+    
+    <item>
+      <title>Make Any Linux Distro Yours With Ansible</title>
+      <link>http://localhost:1313/post/make-any-linx-distro-yours-with-ansible/</link>
+      <pubDate>Sat, 06 Feb 2021 11:39:29 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/make-any-linx-distro-yours-with-ansible/</guid>
+      
+        <description>Using Ansible Pull to Install Programs and configurations</description>
+      
+    </item>
+    
+    <item>
+      <title>ESXI Raspberry Pi</title>
+      <link>http://localhost:1313/post/esxi-raspberry-pi/</link>
+      <pubDate>Sun, 01 Nov 2020 13:01:50 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/esxi-raspberry-pi/</guid>
+      
+        <description>Running ESXI on Raspberry Pi</description>
+      
+    </item>
+    
+    <item>
+      <title>Unify Controller on Rapberry Pi with Docker</title>
+      <link>http://localhost:1313/post/unify-controller-on-rapberry-pi/</link>
+      <pubDate>Mon, 10 Aug 2020 21:39:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/unify-controller-on-rapberry-pi/</guid>
+      
+        <description>Running Unify Controller on Raspberry Pi with Docker</description>
+      
+    </item>
+    
+  </channel>
+</rss>

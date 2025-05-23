@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        Unify Controller on Rapberry Pi with Docker |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content="Running Unify Controller on Raspberry Pi with Docker"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/unify-controller-on-rapberry-pi/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="Unify Controller on Rapberry Pi with Docker"/>
+<meta name="twitter:description" content="Running Unify Controller on Raspberry Pi with Docker"/>
+
+
+
+  
+  <meta property="og:title" content="Unify Controller on Rapberry Pi with Docker" />
+<meta property="og:description" content="Running Unify Controller on Raspberry Pi with Docker" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/unify-controller-on-rapberry-pi/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-10T21:39:22+09:00" />
+<meta property="article:modified_time" content="2020-08-10T21:39:22+09:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Unify Controller on Rapberry Pi with Docker",
+        "headline": "Unify Controller on Rapberry Pi with Docker",
+        "alternativeHeadline": "",
+        "description": "
+      Running Unify Controller on Raspberry Pi with Docker
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/unify-controller-on-rapberry-pi\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2020",
+        "dateCreated": "2020-08-10T21:39:22.00Z",
+        "datePublished": "2020-08-10T21:39:22.00Z",
+        "dateModified": "2020-08-10T21:39:22.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/unify-controller-on-rapberry-pi\/",
+        "wordCount" : "798",
+        "genre" : [ 
+      
+      "Projects"
+
+    
+      
+        ,
+
+      
+      "Tutorials"
+
+    ],
+        "keywords" : [ 
+      
+      "Raspberry Pi"
+
+    
+      
+        ,
+
+      
+      "Docker"
+
+    
+      
+        ,
+
+      
+      "Unifi"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Unify Controller on Rapberry Pi With Docker</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  10/8/2020
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">4-minute read</span>
+          </li>
+        </ul>
+      <p>Docker has intrigued me since I first found out about it. The ability to run an application and dependencies without having to use a full operating system for every application. A lot of VM stacks will have a single application on a VM, but also have to install a full operating system <strong>for every VM</strong>. That is a lot of overhead in my opinion.</p>
+<p>The mobility of being able to migrate a container from one host to another seems pretty amazing. I have one raspberry pi that I am using, so I haven&rsquo;t experience this first hand. From what I understand, its amazingly efficient and easy.</p>
+<p>That got me thinking, how can I get started with docker? I bought a raspberry pi 4 to run my WIFI controller for my unify wireless access points. Is it possible to run the controller through docker? The short answer is yes, and it was a great learning experience. I have two wireless access points, so its not like I am running an enterprise full of hundreds of access points. Lets try it, and if it doesn&rsquo;t work out I can always just run it on the pi directly.</p>
+<h2 id="installing-docker">Installing Docker</h2>
+<p>First thing first! Lets install docker on the raspberry pi. I am currently using Raspberry Pi OS (formally Raspbian) which is a Debian based linux distribution. If you are familiar with Ubuntu, or perhaps Linux Mint, this guide should be easy enough to follow.</p>
+<p>The docs on docker&rsquo;s <a href="https://docs.docker.com/engine/install/ubuntu/">website</a> has installation guide to use depending on your operation system if you want to follow their guide for other distributions.</p>
+<p>I will be using the convenience script from the docker docs.</p>
+<p>First use curl to download the script.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -fsSL https://get.docker.com -o get-docker.sh
+</span></span></code></pre></div><p>Then run the script.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo sh get-docker.sh
+</span></span></code></pre></div><p>If you want to have docker run on startup, I suggest using system control to have it start automatically.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo systemctl enable docker
+</span></span><span class="line"><span class="cl">sudo systemctl start docker
+</span></span><span class="line"><span class="cl">sudo systemctl status docker
+</span></span></code></pre></div><p>You should see that it is active (running)</p>
+<h3 id="pulling-and-creating-the-unify-container">Pulling and Creating the Unify Container</h3>
+<p>When I was researching if this was possible, I came across this <a href="https://www.reddit.com/r/Ubiquiti/comments/7po0jr/installing_unifi_controller_on_ubuntu_with_docker/">reddit</a> post that had all the information to get this up and running on Ubuntu. With a few small alterations we can get this running on our raspberry pi.</p>
+<p>The installation guide goes through the recommendation to create a user and group just for docker. Why? To prevent your container from running as root.</p>
+<p>I will start by creating the group docks</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo adduser docks
+</span></span></code></pre></div><p>You will want to take note of the UID/GUID that is created when you complete this.
+<figure><img src="/images/Posts/001/uid.jpg"/>
+</figure>
+</p>
+<h4 id="creating-persistent-data-for-the-controller">Creating Persistent Data for the Controller</h4>
+<p>One lingering question I had when looking into docker was what happens if the container is destroyed? Does all the data go with it? This might not be a huge concern for something as small as a Unify controller, but there is a lot of configuration that I don&rsquo;t want to have to re-accomplish if something happened to the software.</p>
+<p>Thankfully you can keep your configuration persistent. This is great news! I can upgrade and possibly break a container with less risk. Lets set that up next.</p>
+<p>First we will create the folder, and you will want this owned by the user and group you created earlier.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">docks</span><span class="o">/</span><span class="n">unifi</span>
+</span></span><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">chown</span> <span class="n">docks</span><span class="p">:</span><span class="n">docks</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">docks</span><span class="o">/</span><span class="n">unifi</span>
+</span></span></code></pre></div><h4 id="pulling-and-creating-your-unify-container">Pulling and Creating Your Unify Container</h4>
+<p>You can find multiple options of containers on <a href="https://hub.docker.com/">Docker Hub</a>, but for this we will be using Jacob Alberty&rsquo;s <a href="https://hub.docker.com/r/jacobalberty/unifi/">container</a>. I have been using it for months, and it is updated frequently. Once you get to the docker hub page you will need to pay attention to which container you are trying to pull from docker. I make it a habit to check the Tags tab if there is one. Make sure you are pulling the container that is compatible with arm. If you try to pull the Amd64 container it will not work.</p>
+<p>With that being said lets get the version that is most up to date when you are reading this, but for now it is.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker pull jacobalberty/unifi:arm32v7
+</span></span></code></pre></div><p>After the download we will create the container.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">sudo</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">d</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">restart</span><span class="o">=</span><span class="n">unless</span><span class="o">-</span><span class="n">stopped</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">net</span><span class="o">=</span><span class="n">host</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">name</span><span class="o">=</span><span class="n">unifi</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">TZ</span><span class="o">=</span><span class="s1">&#39;America/New_York&#39;</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">RUNAS_UID0</span><span class="o">=</span><span class="bp">false</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">UNIFI_UID</span><span class="o">=</span><span class="mi">1001</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">e</span> <span class="n">UNIFI_GID</span><span class="o">=</span><span class="mi">1001</span> \
+</span></span><span class="line"><span class="cl">    <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">docks</span><span class="o">/</span><span class="n">unifi</span><span class="p">:</span><span class="o">/</span><span class="n">unifi</span> \
+</span></span><span class="line"><span class="cl">    <span class="n">jacobalberty</span><span class="o">/</span><span class="n">unifi</span><span class="p">:</span><span class="n">arm32v7</span>
+</span></span></code></pre></div><p>To check on the startup process you will want to run the command</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo docker ps
+</span></span></code></pre></div><p>You will want to look at the status and wait for it to say healthy
+<figure><img src="/images/Posts/001/dockerps.jpg"/>
+</figure>
+</p>
+<p>Now you can log in to your unify controller on your raspbery pi&rsquo;s ip on port 8443, and start configuring everything.</p>
+<p>I hope you enjoyed this walk through. It was a fun project for me to get started with docker, and I hope you found it enjoyable as well.</p>
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/unify-controller-not-checking-for-updates/">Unify Controller Not Checking for Updates</a></li>
+    
+      <li><a href="/post/hosting-e-book-server/">Hosting Your Own EBook Server</a></li>
+    
+      <li><a href="/post/run-nextcloud-on-a-raspberry-pi/">Run Nextcloud on a Raspberry Pi</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/projects/">Projects</a><a class="category" href="/categories/tutorials/">Tutorials</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/raspberry-pi/">Raspberry Pi</a><a class="tag" href="/tags/docker/">Docker</a><a class="tag" href="/tags/unifi/">Unifi</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

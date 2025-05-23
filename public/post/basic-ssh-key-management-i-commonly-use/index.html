@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        Basic SSH Key Management I Commonly Use |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content="Basic SSH Key Management I Commonly Use"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/basic-ssh-key-management-i-commonly-use/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="Basic SSH Key Management I Commonly Use"/>
+<meta name="twitter:description" content="Basic SSH Key Management I Commonly Use"/>
+
+
+
+  
+  <meta property="og:title" content="Basic SSH Key Management I Commonly Use" />
+<meta property="og:description" content="Basic SSH Key Management I Commonly Use" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/basic-ssh-key-management-i-commonly-use/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-29T14:47:23+09:00" />
+<meta property="article:modified_time" content="2020-08-29T14:47:23+09:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Basic SSH Key Management I Commonly Use",
+        "headline": "Basic SSH Key Management I Commonly Use",
+        "alternativeHeadline": "",
+        "description": "
+      Basic SSH Key Management I Commonly Use
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/basic-ssh-key-management-i-commonly-use\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2020",
+        "dateCreated": "2020-08-29T14:47:23.00Z",
+        "datePublished": "2020-08-29T14:47:23.00Z",
+        "dateModified": "2020-08-29T14:47:23.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/basic-ssh-key-management-i-commonly-use\/",
+        "wordCount" : "1219",
+        "genre" : [ 
+      
+      "Tutorials"
+
+    ],
+        "keywords" : [ 
+      
+      "SSH"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Basic SSH Key Management I Commonly Use</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  29/8/2020
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">6-minute read</span>
+          </li>
+        </ul>
+      <p>I have only scratched the surface when it comes to the power and convenience of SSH. I am not managing a slew of servers that I have SSH connections for, but it has become more and more an integral part of tech routine. Using github and gitlab, logging into my raspberry pi at home, and an easy way to go from my Linux laptop to desktop has made SSH a very valuable tool.</p>
+<p>During my daily YouTube content intake, I came across a video from one of the channels I subscribe to, <a href="https://www.youtube.com/channel/UCHkYOD-3fZbuGhwsADBd9ZQ">Lawrence Systems</a>, put out a few videos on SSH. After watching these video, the veil was lifted on the potential of how to use more and more features of SSH.</p>
+<h3 id="generating-ssh-keys">Generating SSH Keys</h3>
+<p>I will be using ED25519 to generate my keys in this blog post. Tom, the host of the YouTube video, goes into detail and leaves reference links for using this to generate the key, and it is easier to follow along when you use the same methodology.
+Lets start the key generation:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -a 100 -t ed25519 -f ~/.ssh/pi_ed25519 -C &#34;Kalifornia909@pi&#34;
+</span></span></code></pre></div><p>We can break this command down a little to explain some of the options</p>
+<blockquote>
+<p>-a 100</p>
+</blockquote>
+<p>This option is the math randomness while it&rsquo;s being generated.</p>
+<blockquote>
+<p>-t ed25519</p>
+</blockquote>
+<p>The -t is to choose what you are going to use to generate your key.</p>
+<blockquote>
+<p>-f ~/.ssh/pi_ed25519</p>
+</blockquote>
+<p>This is where you will save your SSH key and it also gives you the option of choose the filename if you want to change it. You can choose to leave this as the default if you want, but I generate a new key for the different connections I use. Overkill, possibly, but it also gives me options to grow and fail. One thing I learned the hard way is to type out the full path of the ~./ssh/. You have to possibility of throwing ssh keys around everywhere and not knowing where they were generated. Then what happens, you generate it again. Only to have the same result. Yes&hellip;.yes&hellip;.I have done this.</p>
+<blockquote>
+<p>-C &ldquo;Kalifornia909@pi&rdquo;</p>
+</blockquote>
+<p>The -C is for comment. I believe its common practice to put an email address, but I keep this kind of random.</p>
+<p>You should receive an output similar to this:
+<figure><img src="/images/Posts/003/sshkeygen.jpg"/>
+</figure>
+</p>
+<p>Most of this is self explanatory, and the only thing you will be asked for is your password. You can choose to use a password with this or not, but I do add passwords to my SSH keys.</p>
+<p>Now you can verify that the files are there.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ls ~/.ssh
+</span></span></code></pre></div><p>You should see at least two files that look familiar. In this example I have pi_ed25519 and pi_ed25519.pub. The file name that is the .pub is the public key. This key can be utilized everywhere without putting the key pair at risk. This is what you will use for site like github and gitlab. Anyone can have this <strong>.pub</strong> file. You can use whatever you like to see whats in it, but I keep it simple.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cat ~/.ssh/pi_ed25519.pub
+</span></span></code></pre></div><p>The file that does <strong>not</strong> end in .pub is your private key, and its meant to be private to that computer. If you cat the wrong file you will get an output that beings with:</p>
+<blockquote>
+<p>&mdash;&ndash;BEGIN OPENSSH PRIVATE KEY&mdash;&ndash;</p>
+</blockquote>
+<p>This tells you right away that it is your private key. Do <strong>not</strong> give this to anyone.</p>
+<h3 id="using-your-ssh-key">Using Your SSH Key</h3>
+<p>You did it! You create your first key pair! Now what?</p>
+<p>The first thing I am going to do is add that key pair identity.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-add ~/.ssh/pi_ed25519
+</span></span></code></pre></div><p>Next I am going to copy this over to my raspberry pi. You can replace raspberry pi with whatever server you are wanting to use this key pair to connect to.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-copy-id -i ~/.ssh/pi_ed25519 username@ip-address
+</span></span></code></pre></div><p>This will copy your ssh pubic key over to the server. In the example the username@ip-address is for whatever host you are trying to connect to. For example <a href="mailto:root@127.0.01">root@127.0.01</a> would copy your ssh public key over to login whenever you tried to log in with that user name at that IP address.</p>
+<hr>
+<p>If you would like a more in-depth explanation, and some great tech videos I have posted the videos that inspired this blog post</p>
+<h3 id="tweaking-ssh-to-your-liking">Tweaking SSH To Your Liking</h3>
+<p>Hopefully by now you are able to login to your host easily and securely. Here are some things that you might want to consider.</p>
+<p>One thing you might want to try is to prevent the root user from being able to login using SSH. This could be helpful to prevent some brute force attacks once SSH pops up on a scan. I will be using vim to edit the SSHD config file. Use whatever text editor you are comfortable with.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo vim /etc/ssh/sshd_config
+</span></span></code></pre></div><p>You want to make sure you are editing the <strong>sshd_config</strong> because there is a file in the same folder that is named ssh_config. Now to disable the root user from being able to login via ssh.</p>
+<p>Find the line in the config file that has</p>
+<blockquote>
+<p>PermitRootLogin</p>
+</blockquote>
+<p>This line might have a # in front of it so it might look like:</p>
+<blockquote>
+<p>#PermitRootLogin</p>
+</blockquote>
+<p>If that is the case you will want to remove the #. You can type yes or no depending on your preference.</p>
+<p>Similar to this
+<figure><img src="/images/Posts/003/sshnoroot.jpg"/>
+</figure>
+</p>
+<p>Another option in this config file is if you want to allow users to login with a password. Once you have your SSH key on the host you will not being using a password anymore. To make changes to this option you will want to find the line that has</p>
+<blockquote>
+<p>PasswordAuthentication</p>
+</blockquote>
+<p>You can say yes or no depending on if you want to allow for password logins.
+Similar to this:</p>
+<figure><img src="/images/Posts/003/sshpassauthno.jpg"/>
+</figure>
+
+<h3 id="modifying-ssh-config-file">Modifying SSH Config File</h3>
+<p>A SSH config file can help if you have multiple SSH keys and identities, or by running a specific command that you want to run. In the video example, Tom has a SSH connection to a server that will reboot the server without input.One reason I have had to use it was gitlab was checking for default ssh key names and would not let me interact with a repository I have.</p>
+<p>Lets dive into it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vim ~/.ssh/config
+</span></span></code></pre></div><p>There are many options that you can do with this but here is mine that allowed me to connect to github.
+<figure><img src="/images/Posts/003/sshconfig.jpg"/>
+</figure>
+</p>
+<p>Lets break down what we see here. There is a #Gitlab.com entry. This is commented out with a #; meaning that when this file is processed the computer will skip that line.</p>
+<p>The Host is gitlab.com. Pretty self explanatory. However you can replace this with an IP Address of what you are trying to connect to.</p>
+<p>The Preferredauthentications is defining that I want to use my public key to connect to this host. My IdentityFile is where my SSH key for this connection is stored.</p>
+<p>However what you don&rsquo;t see but can add is:</p>
+<blockquote>
+<p>Port</p>
+</blockquote>
+<blockquote>
+<p>User</p>
+</blockquote>
+<blockquote>
+<p>RemoteCommand</p>
+</blockquote>
+<blockquote>
+<p>Request TTY</p>
+</blockquote>
+<p>Amongst many others I am sure I am just scratching the surface. The video below goes through a more in depth explanation of this config file.</p>
+<hr>
+<hr>
+<p>Please take the time out and check out the videos that inspired this writeup. It is a great tech channel to learn from. I have been subscribed for over a year now and have grown a great deal because of it.</p>
+<h4 id="ssh-keygen-video">SSH Keygen Video</h4>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/vINn1MIrf7o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h4 id="ssh-config-video">SSH Config Video</h4>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/FhnsVH8t96Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/nahamcon2022-steam-locomotive/">Nahamcon2022 Steam Locomotive</a></li>
+    
+      <li><a href="/post/brain-budgeting/">Brain Budgeting</a></li>
+    
+      <li><a href="/post/docker-containers-with-nfs/">Docker Containers With NFS</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/tutorials/">Tutorials</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/ssh/">SSH</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

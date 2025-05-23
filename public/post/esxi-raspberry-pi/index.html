@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+    
+      
+        ESXI Raspberry Pi |
+      Kalifornia909
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.123.7"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Kalifornia909" />
+  <meta
+    name="description"
+    content="Running ESXI on Raspberry Pi"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.1147aa5bacb4bce677a0e264073829caedb82fd18ea07a5f1d80521f539d1c45.css"
+      integrity="sha256-EUeqW6y0vOZ3oOJkBzgpyu24L9GOoHpfHYBSH1OdHEU="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.7d272de35b410fb165377550cdf9c4d3a80fbbcc961e111914e4d5c0eaf5729f.css"
+    integrity="sha256-fSct41tBD7FlN3VQzfnE06gPu8yWHhEZFOTVwOr1cp8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.55d8333481b07a08e07cf6f37319753a2b47e99f4c395394c5747b48b495aa9b.css"
+    integrity="sha256-VdgzNIGwegjgfPbzcxl1OitH6Z9MOVOUxXR7SLSVqps="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.a7448d02590b43449364b6b5922ed9af5410abb4de4238412a830316dedb850b.css"
+    integrity="sha256-p0SNAlkLQ0STZLa1ki7Zr1QQq7TeQjhBKoMDFt7bhQs="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.9ed75a5d670c953fe4df935937674b4646f92674367e9e66eb995bb04e821647.css"
+    integrity="sha256-ntdaXWcMlT/k35NZN2dLRkb5JnQ2fp5m65lbsE6CFkc="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/post/esxi-raspberry-pi/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/site-feature-image.png" /><meta name="twitter:title" content="ESXI Raspberry Pi"/>
+<meta name="twitter:description" content="Running ESXI on Raspberry Pi"/>
+
+
+
+  
+  <meta property="og:title" content="ESXI Raspberry Pi" />
+<meta property="og:description" content="Running ESXI on Raspberry Pi" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/esxi-raspberry-pi/" /><meta property="og:image" content="http://localhost:1313/images/site-feature-image.png" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-11-01T13:01:50+09:00" />
+<meta property="article:modified_time" content="2020-11-01T13:01:50+09:00" /><meta property="og:site_name" content="Kalifornia&#39;s Tech Wonderland" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "ESXI Raspberry Pi",
+        "headline": "ESXI Raspberry Pi",
+        "alternativeHeadline": "",
+        "description": "
+      Running ESXI on Raspberry Pi
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/post\/esxi-raspberry-pi\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Kalifornia909"
+        },
+        "copyrightYear" : "2020",
+        "dateCreated": "2020-11-01T13:01:50.00Z",
+        "datePublished": "2020-11-01T13:01:50.00Z",
+        "dateModified": "2020-11-01T13:01:50.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Kalifornia909",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "http://localhost:1313/images/site-feature-image.png"
+
+
+      
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/post\/esxi-raspberry-pi\/",
+        "wordCount" : "1425",
+        "genre" : [ 
+      
+      "Projects"
+
+    
+      
+        ,
+
+      
+      "Tutorials"
+
+    ],
+        "keywords" : [ 
+      
+      "ESXI"
+
+    
+      
+        ,
+
+      
+      "Virtualization"
+
+    
+      
+        ,
+
+      
+      "Raspberry Pi"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/logo.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Kalifornia&#39;s Tech Wonderland</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://www.linkedin.com/in/joshua-gaede/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/zer0sense"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://twitter.com/kalifornia909"
+            target="_blank"
+            rel="noopener me"
+            aria-label=""
+            title=""
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/tags/"
+              
+              title=""
+              >Tags</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/categories"
+              
+              title=""
+              >Categories</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      <h1>ESXI Raspberry Pi</h1>
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  1/11/2020
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">7-minute read</span>
+          </li>
+        </ul>
+      <p>I would of never thought that I could set up a lab for ESXI on something as simple as the Raspberry Pi, but I am glad that I was wrong. I currently have a 4gb Raspberry Pi 4 and an 8gb version as well, and my goal is to set up an EXSI cluster using those two devices. That alone will be a great bit of experience to have under my belt.</p>
+<p>The end goal of this project is to setup this cluster under ESXI, and to also incorporate Kubernetes and docker wit this cluster. First thing first, lets get ESXI on the Raspberry Pi&rsquo;s.</p>
+<p>I followed the <a href="https://networkchuck.com/vmware-raspberrypi/">blog</a> post go go along with the video. The accompanying video will be at the end of the blog post, and it is fantastic to follow along with. I will accomplish some of these options differently with more of accomplishing everything in Linux.</p>
+<h2 id="raspberry-pi-out-of-the-box-prep">Raspberry Pi Out-of-the-box-Prep</h2>
+<p>You will need the <a href="https://www.raspberrypi.org/downloads/raspberry-pi-os/">Raspberry Pi OS</a> to update your Raspberry Pi. I would suggest using the Raspbery Pi OS Lite version, as we are not going to use anything in the graphical desktop, and it is much smaller.</p>
+<p>I prefer to use <a href="https://www.balena.io/etcher/">Balena Etcher</a> due to its simplicity and it is cross-platform to flash ISO&rsquo;s to microSD cards.</p>
+<p><a href="https://www.amazon.com/CanaKit-Raspberry-8GB-Extreme-Kit/dp/B08B6F1FV5/ref=sr_1_5?dchild=1&amp;keywords=raspberry+pi+4+8gb+canakit&amp;qid=1604204877&amp;sr=8-5">The Raspberry Pi CanaKit</a> comes with everything you need to get started; including a microSD card and adapter. You will need to format that microSD card, and can use whatever method you like, but I use the disk option in Manjaro. GParted is another very powerful tool for disk management that you may use. I format mine to fat32 no matter what distribution I plan to put on my Pi.</p>
+<p>We will use the option to select to flash from file.</p>
+<figure><img src="/images/Posts/005/etcher.jpg"/>
+</figure>
+
+<p>Once selected, click the select target button, and choose your drive. Step 3 is flash. You now have your OS ready for your Pi.</p>
+<p>Give it a while to boot, and once you are at your command prompt you are going to run the following commands to make sure your Raspberry Pi is up to date and ready.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo rpi-eeprom-update
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo rpi-eeprom-update -a
+</span></span></code></pre></div><p>Once updated you can shut down your Raspberry Pi and pull the card back out.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sudo shutdown -now
+</span></span></code></pre></div><p>You will now erase the card of Raspberry Pi OS using Disk management or GParted if back to nothing.</p>
+<p>The whole point of doing this to update your Raspberry Pi is to make sure that you are able to boot off of USB, which was an update after the Raspberry Pi was originally released.</p>
+<h2 id="prepping-the-pi-for-esxi">Prepping the Pi for ESXI</h2>
+<p>You will need to download the <a href="https://bit.ly/2HpIaG6">Latest Raspberry Pi Firmware</a> and the <a href="https://bit.ly/3jota8D">UEFI</a>. Once you download those extract it to whichever folder you want.</p>
+<p>You will want to copy the <strong>firmware-master/boot/</strong> folder and copy all the usbdrive that you just recently formatted. Once they are finished copying, if you have any files that are <em>kernel.img</em> you should delete the files.</p>
+<p>Now open the <strong>RPi4_UEFI</strong> folder and copy all of it&rsquo;s content to the SD card as well. You will be prompted if you want to replace the file and yes you want to replace all the files.</p>
+<p>Once those have all copied you will want to open the file name <strong>config.txt</strong> and add this line.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gpu_mem=16
+</span></span></code></pre></div><p>Save your changes to the file, eject your microSD card, and you can remove it from your PC.</p>
+<h2 id="esxi-download-and-installation">ESXI Download and Installation</h2>
+<p>We will need an <a href="https://flings.vmware.com/esxi-arm-edition">ESXI Image</a> to download for the installation. If you do not have a VMWare account you can go ahead and sign up. The account is free.</p>
+<p>Once you have downloaded the image we will jump back into Etcher, and when we select the file we will use a separate usbdrive to flash the image on to. Now that the flash drive has the EXSI image on it eject it from your computer, and plug it into your Raspberry Pi. Your Raspberry Pi should have both the microSD card we already setup and the usbdrive we just flashed the ESXI image on.</p>
+<p>Power up the Pi, and you will have to hit the escape key on your keyboard as soon as you see an image pop up on your Pi, so that we can enter the setup.</p>
+<h3 id="bios-changes-to-unlock-ram-limit-and-boot-to-usb-drive">BIOS Changes to Unlock Ram Limit and Boot to USB Drive</h3>
+<p>You will see a small gray box once you hit the escape key and you are in the UEFI for the Raspberry Pi. The ram that you see on your Pi is incorrect, and we are going to fix that first. Using your arrow keys to navigate you want to use the following path <strong>Device Management &gt; Rapberry Pi Configuration &gt; Advance Configuration</strong> and hit enter on the line that says <strong>Limit RAM to 3 GB</strong>. Choose disable to get the full ram configuration on your Raspberry Pi. To save those changes hit <strong>F10</strong> on your keyboard and press <strong>Y</strong> on your keyboard to save it.</p>
+<p>Now hit the <strong>Escape Key</strong> on your keyboard until you get back to the original screen that is the gray box with your Raspberry Pi information. Use the arrow keys on your keyboard to highlight <strong>Continue</strong> and hit enter.</p>
+<p>Your Raspberry Pi will reboot, and once again you will be hitting the <strong>Escape Key</strong> while it is booting up until you see the gray box with your Raspberry Pi information. You will go to <strong>Boot Manager</strong>, and you will use the arrow keys to highlight the name of your USB Drive.</p>
+<p>As soon as the boot process starts you want to hit <strong>shift and o</strong>. If you are successful you will see <em>runweasel cdromboot00</em> on your screen. You will want to add the following command (which is case sensative)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">autoPartitionOSDataSize=8192
+</span></span></code></pre></div><p>This will ensure that the ESXI image will not take over your whole microSD card.</p>
+<h3 id="esxi-setup">ESXI Setup</h3>
+<p>Now you will see a gray and yellow screen with a progress bar at the bottom. This could take a while. Once it has finished, you will see a Welcome message. Hit enter to continue, and hit <strong>F11</strong> to accept the EULA. The installer will scan your available drives. You will see the installer usb for now, but we want to get another USB Drive for the actual installation. Once inserted, you will hit <strong>F5</strong> to refresh and choose the blank USB drive. Choose your layout and enter your root password. You will get a prompt to confirm the install and hit <strong>F11</strong> to install. The install will complete and ask you to remove the installation USB drive from the Raspberry Pi, so remove it and hit enter to reboot.</p>
+<p>It might take a little bit to completely shutdown and reboot, but once it does hit the <strong>Escape Key</strong> on your keyboard again to enter the UEFI for the Raspberry Pi. Using your arrow keys go down to <em>Boot Maintenance Manager &gt; Boot Options &gt; Change Boot Order</em>. Hit the <strong>Enter Key</strong> and a Box will pop up; select the USB drive name and use the <strong>+</strong> key to move it to the top. Hit enter and then <strong>F10</strong> to save, and <strong>Y</strong> to commit the change. Now escape back to the main menu and select continue. ESXI should load.</p>
+<p>You will see your IP address in the yellow portion of the screen once everything is loaded. You can type that address in to access the web interface of your ESXI server.</p>
+<h2 id="create-your-virtual-machine">Create Your Virtual Machine</h2>
+<p>Once you have logged in you will see the Virtual Machines on the left.</p>
+<figure><img src="/images/Posts/005/vmwarevm.jpg"/>
+</figure>
+
+<p>When you download images you will want to make sure they are Arm compatible. I am going to start with <a href="https://ubuntu.com/download/server/arm">Ubuntu Server</a>.</p>
+<p>Let&rsquo;s create a VM.</p>
+<figure><img src="/images/Posts/005/vmwarecreatevm.jpg"/>
+</figure>
+
+<figure><img src="/images/Posts/005/vmwarecreatevm1.jpg"/>
+</figure>
+
+<figure><img src="/images/Posts/005/vmwarecreatevm2.jpg"/>
+</figure>
+
+<p>Leave the datastore as it is, unless you have another storage setup. The Customize settings is all your choice. However you want to divide up your CPU,Ram, and HDD space.</p>
+<figure><img src="/images/Posts/005/vmwarecreatevm3.jpg"/>
+</figure>
+
+<p>One change you will want to make is the CD/DVD Drive 1, you will change it from <strong>Host File</strong> to Datastore ISO File. Choose the option to Upload.</p>
+<figure><img src="/images/Posts/005/vmwarecreatevm4.jpg"/>
+</figure>
+
+<figure><img src="/images/Posts/005/vmwarecreatevm5.jpg"/>
+</figure>
+
+<p>You can select the image once it is finished uploading.</p>
+<p>Review and finish through the setup. Now you will want to select the image and power it on.</p>
+<figure><img src="/images/Posts/005/vmwarepoweron.jpg"/>
+</figure>
+
+<p>A small window will show underneath.  You can click that window to interact with the server as it is setting up.</p>
+<figure><img src="/images/Posts/005/vmwarepoweron1.jpg"/>
+</figure>
+
+<p>Enjoy! This will hopefully be part of a series to setup multiple VM&rsquo;s in ESXI and play with Kubernetes and docker in a my lab setup.</p>
+<hr>
+<p>The tutorial that started this project that I have enjoyed</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/6aLyZisehCU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/post/setting-up-active-dirctory-lab-with-proxmox/">Setting Up Active Dirctory Lab With Proxmox</a></li>
+    
+      <li><a href="/post/hosting-e-book-server/">Hosting Your Own EBook Server</a></li>
+    
+      <li><a href="/post/run-nextcloud-on-a-raspberry-pi/">Run Nextcloud on a Raspberry Pi</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+        <span><a class="category" href="/categories/projects/">Projects</a><a class="category" href="/categories/tutorials/">Tutorials</a></span>
+
+
+      
+
+      
+        <span><a class="tag" href="/tags/esxi/">ESXI</a><a class="tag" href="/tags/virtualization/">Virtualization</a><a class="tag" href="/tags/raspberry-pi/">Raspberry Pi</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        2020-2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

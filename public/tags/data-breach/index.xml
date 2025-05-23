@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Breach on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/tags/data-breach/</link>
+    <description>Recent content in Data Breach on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 13 Apr 2022 19:16:22 +0900</lastBuildDate><atom:link href="http://localhost:1313/tags/data-breach/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cash App Data Breach</title>
+      <link>http://localhost:1313/post/cash-app-data-breach/</link>
+      <pubDate>Wed, 13 Apr 2022 19:16:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/post/cash-app-data-breach/</guid>
+      
+        <description>Cash App Data Breach</description>
+      
+    </item>
+    
+  </channel>
+</rss>

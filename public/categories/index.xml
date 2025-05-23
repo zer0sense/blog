@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Kalifornia&#39;s Tech Wonderland</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Kalifornia&#39;s Tech Wonderland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Aug 2024 00:30:33 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Article</title>
+      <link>http://localhost:1313/categories/article/</link>
+      <pubDate>Wed, 07 Aug 2024 00:30:33 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/article/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/categories/linux/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/linux/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/categories/projects/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/projects/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>http://localhost:1313/categories/tutorials/</link>
+      <pubDate>Fri, 26 Jul 2024 02:35:47 +0000</pubDate>
+      
+      <guid>http://localhost:1313/categories/tutorials/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CTF</title>
+      <link>http://localhost:1313/categories/ctf/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/categories/ctf/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ethical Hacking</title>
+      <link>http://localhost:1313/categories/ethical-hacking/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/categories/ethical-hacking/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Pentesting</title>
+      <link>http://localhost:1313/categories/pentesting/</link>
+      <pubDate>Sun, 15 May 2022 22:15:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/categories/pentesting/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>http://localhost:1313/categories/news/</link>
+      <pubDate>Wed, 13 Apr 2022 19:16:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/categories/news/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TryHackMe</title>
+      <link>http://localhost:1313/categories/tryhackme/</link>
+      <pubDate>Sun, 01 Aug 2021 11:06:58 +0900</pubDate>
+      
+      <guid>http://localhost:1313/categories/tryhackme/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/categories/troubleshooting/</link>
+      <pubDate>Sun, 23 Aug 2020 08:22:22 +0900</pubDate>
+      
+      <guid>http://localhost:1313/categories/troubleshooting/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
